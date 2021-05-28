@@ -68,3 +68,27 @@
 
 
 //xxxxxxxxxxxxxxxxxxxxxзадача № 6 xxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx//
+
+// const fruits = ["apple", "plum", "pear", "orange"];
+
+// // Write your code under this line
+// fruits[1] = "peach";
+// fruits[3] = "banana";
+
+//xxxxxxxxxxxxxxxxxxxxxзадача № 7 xxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx//
+
+// const fruits = ["apple", "peach", "pear", "banana"];
+
+// // Change code below this line
+// const fruitsArrayLength = fruits.length;
+// console.log(fruits.length);
+
+//xxxxxxxxxxxxxxxxxxxxxзадача № 8 xxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx//
+
+
+const fruits = ["apple", "peach", "pear", "banana"];
+
+// Change code below this line
+ const lastElementIndex = fruits.length - 1;
+ const lastElement = fruits[3];
+console.log(fruits[3]);

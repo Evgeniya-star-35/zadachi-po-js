@@ -97,3 +97,22 @@
 //xxxxxxxxxxxxxxxxxxxxxзадача № 9 xxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx//
 
 
+// function getExtremeElements(array) {
+//   // Change code below this line
+
+
+// const firstElement = array[0];
+//   const lastElement = array.slice(-1)[0] ;
+  
+// return [firstElement, lastElement];
+//   console.log([firstElement, lastElement]);
+//   // Change code above this line
+// }
+// console.log(getExtremeElements([1, 2, 3, 4, 5]));
+// console.log(getExtremeElements(["Earth", "Mars", "Venus"]));
+// console.log(getExtremeElements(["apple", "peach", "pear", "banana"]));
+
+
+
+//xxxxxxxxxxxxxxxxxxxxxзадача № 10 xxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx//
+

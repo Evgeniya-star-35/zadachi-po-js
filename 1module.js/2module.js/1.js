@@ -86,9 +86,14 @@
 //xxxxxxxxxxxxxxxxxxxxxзадача № 8 xxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx//
 
 
-const fruits = ["apple", "peach", "pear", "banana"];
+// const fruits = ["apple", "peach", "pear", "banana"];
 
-// Change code below this line
- const lastElementIndex = fruits.length - 1;
- const lastElement = fruits[3];
-console.log(fruits[3]);
+// // Change code below this line
+//  const lastElementIndex = fruits.length - 1;
+
+//  const lastElement = fruits[lastElementIndex];
+
+
+//xxxxxxxxxxxxxxxxxxxxxзадача № 9 xxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx//
+
+

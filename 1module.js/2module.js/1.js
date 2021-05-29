@@ -116,3 +116,14 @@
 
 //xxxxxxxxxxxxxxxxxxxxxзадача № 10 xxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx//
 
+function splitMessage(message, delimeter) {
+  let words;
+  // Change code below this line
+  console.log(delimeter.split(""));
+  console.log(message.split(" "));
+  // Change code above this line
+  return words;
+}
+console.log(splitMessage("Mango hurries to the train", " "));
+console.log(splitMessage("Mango", ""));
+console.log(splitMessage("best_for_week", "_")); 

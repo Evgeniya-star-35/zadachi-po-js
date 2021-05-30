@@ -210,23 +210,27 @@
 // Вызов makeArray(["Earth", "Jupiter"], ["Neptune", "Uranus", "Venus"], 0) возвращает []
 // Вызов функции makeArray() со случайными массивами и случайным числом возвращает правильный массив
 
-function makeArray(firstArray, secondArray, maxLength) {
-    // Change code below this line
+
  
+//   function makeArray(firstArray, secondArray, maxLength) {
+//     // Change code below this line
+// return firstArray.concat(secondArray).slice(0, maxLength)
+
+//     // Change code above this line
+//   }
+
   
-maxLength = Array.maxLength;
-  
-  const newArray = Array.slice(maxLength);
-  const result = newArray > maxLength ? newArray.maxLength : newArray;
-    // Change code above this line
-  }
 
 
   
-console.log(makeArray(["Mango", "Poly"], ["Ajax", "Chelsea"], 3));
-console.log(makeArray(["Mango", "Poly", "Houston"], ["Ajax", "Chelsea"], 4));
-console.log(makeArray(["Mango"], ["Ajax", "Chelsea", "Poly", "Houston"], 3));
-console.log(makeArray(["Earth", "Jupiter"], ["Neptune", "Uranus"], 2));
-console.log(makeArray(["Earth", "Jupiter"], ["Neptune", "Uranus"], 4));
-console.log(makeArray(["Earth", "Jupiter"], ["Neptune", "Uranus", "Venus"], 0));
-console.log(makeArray());
+// console.log(makeArray(["Mango", "Poly"], ["Ajax", "Chelsea"], 3));
+// console.log(makeArray(["Mango", "Poly", "Houston"], ["Ajax", "Chelsea"], 4));
+// console.log(makeArray(["Mango"], ["Ajax", "Chelsea", "Poly", "Houston"], 3));
+// console.log(makeArray(["Earth", "Jupiter"], ["Neptune", "Uranus"], 2));
+// console.log(makeArray(["Earth", "Jupiter"], ["Neptune", "Uranus"], 4));
+// console.log(makeArray(["Earth", "Jupiter"], ["Neptune", "Uranus", "Venus"], 0));
+// console.log(makeArray());
+
+
+//xxxxxxxxxxxxxxxxxxxxxзадача № 17 xxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx//
+

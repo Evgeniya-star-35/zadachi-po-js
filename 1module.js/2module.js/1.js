@@ -212,12 +212,17 @@
 
 function makeArray(firstArray, secondArray, maxLength) {
     // Change code below this line
-const planets = firstArray.concat(secondArray);
- maxLength = planets.lenght;
-
-
+ 
+  
+maxLength = Array.maxLength;
+  
+  const newArray = Array.slice(maxLength);
+  const result = newArray > maxLength ? newArray.maxLength : newArray;
     // Change code above this line
   }
+
+
+  
 console.log(makeArray(["Mango", "Poly"], ["Ajax", "Chelsea"], 3));
 console.log(makeArray(["Mango", "Poly", "Houston"], ["Ajax", "Chelsea"], 4));
 console.log(makeArray(["Mango"], ["Ajax", "Chelsea", "Poly", "Houston"], 3));

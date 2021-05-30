@@ -234,3 +234,27 @@
 
 //xxxxxxxxxxxxxxxxxxxxxзадача № 17 xxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx//
 
+// Задание
+// Дополни цикл for так, чтобы он логировал все целые числа в диапазоне от start до end включительно.
+
+// Тесты
+// Объявлена переменная start
+// Значение переменной start это число 3
+// Объявлена переменная end
+// Значение переменной end это число 7
+// Объявлена переменная i - счётчик цикла
+// Начальное значение переменной i равно 3
+// Условие цикла приводится к true до тех пор, пока i меньше либо равно 7
+// На каждой итерации значение переменной i увеличивается на единицу
+// Вывод в консоль переменной i покажет числа 3, 4, 5, 6, 7
+
+
+// const start = 3;
+// const end = 7;
+
+// for (let i = start; i <= end; i +=1 ) { // Change this line
+//   console.log(i);
+// }
+
+
+//xxxxxxxxxxxxxxxxxxxxxзадача № 18 xxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx//

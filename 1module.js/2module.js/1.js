@@ -361,26 +361,41 @@
 
 // Напиши функцию filterArray(numbers, value), которая принимает массив чисел (параметр numbers) и возвращает новый массив, в котором будут только те элементы массива numbers, которые больше чем значение параметра value (число).
 
-function filterArray(numbers, value) {
-   // Change code below this line
- let newNumbers = [];
-for (let i = 0; i > value; i += 1) {
- 
-  newNumbers = numbers.push(i);
- 
-  }
+// function filterArray(numbers, value) {
+//    // Change code below this line
 
-  return newNumbers;
+// let result = [];
+
+// for (let elem of numbers) {
+// 	if (elem > value) {
+// 		result.push(elem);
+// 	}
+// }
+
+// return result;
+//   // Change code above this line
+// }
 
 
-  // Change code above this line
-}
+
+// console.log(filterArray([1, 2, 3, 4, 5], 3));
+// console.log(filterArray([1, 2, 3, 4, 5], 4));
+// console.log(filterArray([1, 2, 3, 4, 5], 5));
+// console.log(filterArray([12, 24, 8, 41, 76], 38));
+// console.log(filterArray([12, 24, 8, 41, 76], 20));
+// console.log(filterArray());
+
+//xxxxxxxxxxxxxxxxxxxxxзадача № 24 xxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx//
+
+// Функция checkFruit(fruit) принимает строку с названием фрукта (параметр fruit), и проверяет есть ли такой фрукт в массиве fruits.
+
+// Дополни код функции так, что если:
+
+// фрукт есть в массиве, то функция возвращает true;
+// фрукта нет в массиве, то функция возвращает false.
 
 
 
-console.log(filterArray([1, 2, 3, 4, 5], 3));
-console.log(filterArray([1, 2, 3, 4, 5], 4));
-console.log(filterArray([1, 2, 3, 4, 5], 5));
-console.log(filterArray([12, 24, 8, 41, 76], 38));
-console.log(filterArray([12, 24, 8, 41, 76], 20));
-console.log(filterArray());
+
+
+

@@ -361,33 +361,23 @@
 
 // Напиши функцию filterArray(numbers, value), которая принимает массив чисел (параметр numbers) и возвращает новый массив, в котором будут только те элементы массива numbers, которые больше чем значение параметра value (число).
 
-// function filterArray(numbers, value) {
-//    // Change code below this line
-//  let newNumbers = [];
-// for (let i = 0; i > value; i += 1) {
- 
-//   newNumbers = numbers.push(i);
- 
-//   }
-
-//   return newNumbers;
-
-
-//   // Change code above this line
-// }
-
-
 function filterArray(numbers, value) {
-  // Change code below this line
-  let newNumbers = [];
-  for (const number of numbers) {
-    if (number > value) {
+   // Change code below this line
+ let newNumbers = [];
+for (let i = 0; i > value; i += 1) {
  
-      newNumbers = numbers.push(number);
-    }
+  newNumbers = numbers.push(i);
+ 
   }
+
   return newNumbers;
+
+
+  // Change code above this line
 }
+
+
+
 console.log(filterArray([1, 2, 3, 4, 5], 3));
 console.log(filterArray([1, 2, 3, 4, 5], 4));
 console.log(filterArray([1, 2, 3, 4, 5], 5));

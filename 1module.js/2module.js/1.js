@@ -319,16 +319,24 @@
 // Задание
 // Напиши функцию findLongestWord(string) которая принимает произвольную строку состоящую только из слов разделённых пробелом (параметр string) и возвращает самое длинное слово в этой строке.
 
+
 function findLongestWord(string) {
   // Change code below this line
 
-
-  var strSplit = string.split(' ');
-  var longestWord = 0;
-  for(var i = 0; i < strSplit.length; i += 1){
-    if(strSplit[i].length > longestWord){
-	longestWord = strSplit[i].length;
-     }
+  const strSplit = string.split(' ');
+  let longestWord = 0;
+  for(let i = 0; i < strSplit.length; i += 1) {
+    if(strSplit[i].length > longestWord) {
+    longestWord = strSplit[i].length;
+    }
   }
   return longestWord;
+
+
+
+  // Change code above this line
 }
+console.log(findLongestWord("The quick brown fox jumped over the lazy dog"));
+console.log(findLongestWord("Google do a roll"));
+console.log(findLongestWord("May the force be with you"));
+console.log(findLongestWord());

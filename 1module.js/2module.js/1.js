@@ -394,8 +394,138 @@
 // фрукт есть в массиве, то функция возвращает true;
 // фрукта нет в массиве, то функция возвращает false.
 
+// function checkFruit(fruit) {
+//   const fruits = ["apple", "plum", "pear", "orange"];
+
+//   return result = fruits.includes(fruit) ? true : false; // Change this line
+// }
+
+//xxxxxxxxxxxxxxxxxxxxxзадача № 25 xxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx//
+
+// Общими элементами массивов называют те элементы, которые присутствуют во всех массивах.
+
+// Например, в двух массивах [1, 3, 5] и [0, 8, 5, 3] общими будут числа 3 и 5, т.к. они присутствуют в обоих исходных массивах. А числа 0, 1 и 8 присутствуют только в одном из массивов.
+
+// Напиши функцию getCommonElements(array1, array2) которая получает два массива произвольной длины в параметры array1 и array2, и возвращает новый массив, состоящий из тех элементов, которые присутствуют в обоих исходных массивах.
 
 
 
+// function getCommonElements(array1, array2) {
+//   // Change code below this line
+  
+//   const newArray = [];
+// for (const element of array1) {
+//  if(array2.includes(element)) {
+//  newArray.push(element);
+//  }
+// }
+//  return newArray;
+// // Change code above this line
+// }
+//xxxxxxxxxxxxxxxxxxxxxзадача № 26 xxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx//
 
+// Выполни рефакторинг кода функции calculateTotalPrice(order) заменив цикл for на for...of.
+
+// function calculateTotalPrice(order) {
+//   let total = 0;
+//   // Change code below this line
+
+//   for (const element of order) {
+//     total += element;
+//   }
+
+//   // Change code above this line
+//   return total;
+// }
+
+//xxxxxxxxxxxxxxxxxxxxxзадача № 27 xxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx//
+
+// Выполни рефакторинг функции filterArray(numbers, value) заменив цикл for на for...of.
+
+// function filterArray(numbers, value) {
+//   // Change code below this line
+//   const filteredNumbers = [];
+
+//   for (const number of numbers) {
+    
+
+//     if (number > value) {
+//       filteredNumbers.push(number);
+//     }
+//   }
+
+//   return filteredNumbers;
+//   // Change code above this line
+// }
+
+//xxxxxxxxxxxxxxxxxxxxxзадача № 28 xxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx//
+
+// Дополни выражения остатка от деления так, чтобы код проходил тесты.
+
+// Change code below this line
+// const a = 3 % 1;
+// const b = 4 % 3;
+// const c = 11 % 8;
+// const d = 12 % 7;
+// const e = 8 % 3;
+
+
+//xxxxxxxxxxxxxxxxxxxxxзадача № 29 xxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx//
+
+
+// Напиши функцию getEvenNumbers(start, end) которая возвращает массив всех чётных чисел от start до end. Чётным считается число которое делится на 2 без остатка (10 % 2 === 0).
+
+// function getEvenNumbers(start, end) {
+//    // Change code below this line
+//   let array = [];
+// for (let i = start; i <= end; i += 1) {
+  
+//   if (i % 2 === 0) {
+//      array.push(i);
+    
+//   }
+// }
+// return array;
+//     // Change code above this line
+//   }
+
+//xxxxxxxxxxxxxxxxxxxxxзадача № 30 xxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx//
+
+// Дополни код так, чтобы в переменную number записывалось первое число от start до end, которое делится на 5 без остатка.
+
+// const start = 6;
+// const end = 27;
+// let number;
+
+// for (let i = start; i < end; i += 1) {
+//   if (i % 5 === 0) {
+//     number = i;
+//     break;
+//   }
+// }
+
+//xxxxxxxxxxxxxxxxxxxxxзадача № 31 xxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx//
+
+// Выполни рефакторинг функции findNumber(start, end, divisor) так, чтобы она:
+
+// возвращала первое число от start до end, которое делится на divisor без остатка
+// не использовала оператор break
+// не использовала переменную number
+
+// function findNumber(start, end, divisor) {
+//   // Change code below this line
+//   let number;
+
+//   for (let i = start; i < end; i += 1) {
+//     if (i % divisor === 0) {
+//       number = i;
+//        return i;
+//     }
+//   }
+
+ 
+//   // Change code above this line
+// }
+
+//xxxxxxxxxxxxxxxxxxxxxзадача № 32 xxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx//
 

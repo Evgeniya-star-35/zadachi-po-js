@@ -320,23 +320,43 @@
 // Напиши функцию findLongestWord(string) которая принимает произвольную строку состоящую только из слов разделённых пробелом (параметр string) и возвращает самое длинное слово в этой строке.
 
 
-function findLongestWord(string) {
-  // Change code below this line
+// function findLongestWord(string) {
+//   // Change code below this line
 
-  const strSplit = string.split(' ');
-  let longestWord = 0;
-  for(let i = 0; i < strSplit.length; i += 1) {
-    if(strSplit[i].length > longestWord) {
-    longestWord = strSplit[i].length;
-    }
-  }
-  return longestWord;
+//   const strSplit = string.split(' ');
+  
+//   let longestWord = ' ';
+//   for(let i = 0; i < strSplit.length; i += 1) {
+//     if(strSplit[i].length > longestWord.length) {
+//     longestWord = strSplit[i];
+//     }
+//   }
+//   return longestWord;
 
 
 
-  // Change code above this line
-}
-console.log(findLongestWord("The quick brown fox jumped over the lazy dog"));
-console.log(findLongestWord("Google do a roll"));
-console.log(findLongestWord("May the force be with you"));
-console.log(findLongestWord());
+//   // Change code above this line
+// }
+// console.log(findLongestWord("The quick brown fox jumped over the lazy dog"));
+// console.log(findLongestWord("Google do a roll"));
+// console.log(findLongestWord("May the force be with you"));
+
+//xxxxxxxxxxxxxxxxxxxxxзадача № 22 xxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx//
+
+// Дополни код функции createArrayOfNumbers(min, max) так, чтобы она возвращала массив всех целых чисел от значения min до max.
+
+// function createArrayOfNumbers(min, max) {
+//   const numbers = [];
+//   // Change code below this line
+
+//   for (let i = min; i <= max; i += 1) {
+    
+//    numbers.push(i);
+//   }
+//   // Change code above this line
+//   return numbers;
+// }
+
+//xxxxxxxxxxxxxxxxxxxxxзадача № 23 xxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx//
+
+

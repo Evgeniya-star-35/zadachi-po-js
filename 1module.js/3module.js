@@ -270,3 +270,52 @@
 // имя владельца во вложенном свойстве name на "Henry Sibola";
 // массив тегов в свойстве tags добавив в конец строку "trusted".
 
+// const apartment = {
+//   imgUrl: "https://via.placeholder.com/640x480",
+//   descr: "Spacious apartment in the city center",
+//   rating: 4,
+//   price: 2153,
+//   tags: ["premium", "promoted", "top"],
+//   owner: {
+//     name: "Henry",
+//     phone: "982-126-1588",
+//     email: "henry.carter@aptmail.com",
+//   },
+// };
+// apartment.price = 5000;
+// apartment.rating = 4.7;
+// apartment.owner.name = "Henry Sibola";
+// apartment.tags.push("trusted");
+// // Change code below this line
+
+//xxxxxxxxxxxxxxxxxxxxxзадача № 7 xxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx//
+
+// Добавление свойств
+// Операция добавления нового свойства после создания объекта ничем не отличается от изменения значения уже существующего свойства. Если при записи значения по имени, такого свойства в объекте нет, оно будет создано.
+
+// const book = {
+//   title: "Последнее королевство",
+//   author: "Бернард Корнуэлл",
+//   genres: ["историческая проза", "приключения"],
+//   public: true,
+//   rating: 8.38
+// };
+
+// book.pageCount = 836;
+// book.originalLanguage = "en";
+// book.translations = ["ua", "ru"];
+
+// console.log(book.pageCount); // 836
+// console.log(book.originalLanguage); // "en"
+// console.log(book.translations); // ["ua", "ru"]
+// Задание
+// Добавь объекту apartment несколько новых свойств:
+
+// area - площадь в квадратных метрах, число 60;
+// rooms - количество комнат, число 3;
+// location - местоположение квартиры, обьект со следующими вложенными свойствами;
+// country - страна, строка "Jamaica";
+// city - город, строка "Kingston".
+
+
+

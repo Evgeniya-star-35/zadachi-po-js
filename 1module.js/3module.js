@@ -189,4 +189,84 @@
 
 //xxxxxxxxxxxxxxxxxxxxxзадача № 5 xxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx//
 
+// Доступ к свойствам через квадратные скобки
+// Второй способ получить доступ к свойству объекта это синтаксис обьект["ключ_свойства"]. Похоже на обращение к элементу массива с отличием в том, что в скобках указывается не индекс элемента, а имя свойства как строка.
+
+// Синтаксис «квадратных скобок» используется значительно реже. Как правило в случаях когда имя свойства заранее неизвестно или оно хранится в переменной (как значение параметра функции, например).
+
+// На место обращения будет возвращено значение свойства с таким именем.
+// Если в объекте нет свойства с таким именем, на место обращения вернётся undefined.
+// const book = {
+//   title: "Последнее королевство",
+//   author: "Бернард Корнуэлл",
+//   genres: ["историческая проза", "приключения"],
+//   public: true,
+//   rating: 8.38,
+// };
+
+// const bookTitle = book["title"];
+// console.log(bookTitle);
+// // "Последнее королевство"
+
+// const bookGenres = book["genres"];
+// console.log(bookGenres);
+// // ["историческая проза", "приключения"]
+
+// const propKey = "author";
+// const bookAuthor = book[propKey];
+// console.log(bookAuthor);
+// // "Бернард Корнуэлл"
+// Задание
+// Дополни код присвоив объявленным переменным выражения обращения к соответствующим свойствам обьекта apartment используя синтаксис «квадратных скобок».
+
+// aptRating - рейтинг;
+// aptDescr - описание;
+// aptPrice - цена;
+// aptTags - теги.
+
+// const apartment = {
+//   imgUrl: "https://via.placeholder.com/640x480",
+//   descr: "Spacious apartment in the city center",
+//   rating: 4,
+//   price: 2153,
+//   tags: ["premium", "promoted", "top"],
+// };
+
+// // Change code below this line
+// const aptRating = apartment["rating"];
+// const aptDescr = apartment["descr"];
+// const aptPrice = apartment["price"];
+// const aptTags = apartment["tags"];
+// // Change code above this line
+
+
+
+//xxxxxxxxxxxxxxxxxxxxxзадача № 6 xxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx//
+
+
+// Изменение значения свойства
+// После того, как объект создан, значение его свойств можно изменить. Для этого необходимо обратиться к ним по имени, например, «через точку», и присвоить новое значение.
+
+// const book = {
+//   title: "Последнее королевство",
+//   author: "Бернард Корнуэлл",
+//   genres: ["историческая проза", "приключения"],
+//   public: true,
+//   rating: 8.38,
+// };
+
+// book.rating = 9;
+// book.public = false;
+// book.genres.push("драма");
+
+// console.log(book.rating); // 9
+// console.log(book.public); // false
+// console.log(book.genres); // ["историческая проза", "приключения", "драма"]
+// Задание
+// Дополни код обновив значения свойств объекта apartment:
+
+// цену в свойстве price на 5000;
+// рейтинг квартиры в свойстве rating на 4.7;
+// имя владельца во вложенном свойстве name на "Henry Sibola";
+// массив тегов в свойстве tags добавив в конец строку "trusted".
 

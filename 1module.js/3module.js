@@ -317,5 +317,78 @@
 // country - страна, строка "Jamaica";
 // city - город, строка "Kingston".
 
+// const apartment = {
+//   imgUrl: "https://via.placeholder.com/640x480",
+//   descr: "Spacious apartment in the city center",
+//   rating: 4.7,
+//   price: 5000,
+//   tags: ["premium", "promoted", "top", "trusted"],
+//   owner: {
+//     name: "Henry Sibola",
+//     phone: "982-126-1588",
+//     email: "henry.carter@aptmail.com",
+//   },
+//   location: {
+//   country: "Jamaica",
+//   city: "Kingston",
+// },
+// };
+
+// apartment.area = 60;
+// apartment.rooms = 3;
+// apartment.location = {};
+// apartment.location.country = "Jamaica";
+// apartment.location.city = "Kingston";
+// // Change code below this line
 
 
+//xxxxxxxxxxxxxxxxxxxxxзадача № 8 xxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx//
+
+// Короткие свойства
+// Иногда, при создании объекта, значение свойства необходимо взять из переменной или параметра функции с таким же именем, как и само свойство.
+
+// Синтксис в следующем примере слишком громоздкий, потому что приходится дублировать имя свойства и имя переменной, в которой хранится необходимое значение.
+
+// const name = "Генри Сибола";
+// const age = 25;
+
+// const user = {
+//   name: name,
+//   age: age
+// };
+
+// console.log(user.name); // "Генри Сибола"
+// console.log(user.age); // 25
+// Синтаксис коротких свойств (shorthand properties) решает эту проблему, позволяя использовать имя переменной как имя свойства, а её значение как значение свойства.
+
+// const name = "Генри Сибола";
+// const age = 25;
+
+// const user = {
+//   name,
+//   age
+// };
+
+// console.log(user.name); // "Генри Сибола"
+// console.log(user.age); // 25
+// То есть, при объявлении объекта достаточно указать только имя свойства, а значение будет взято из переменной с аналогичным именем.
+
+// Задание
+// Дополни код объявления объекта так, чтобы у него были свойства name, price, image и tags со значениями из переменных с аналогичными именами. Обязательно используй синтаксис коротких свойств.
+
+
+// const name = 'Repair Droid';
+// const price = 2500;
+// const image = 'https://via.placeholder.com/640x480';
+// const tags = ['on sale', 'trending', 'best buy'];
+
+// const product = {
+//   name,
+//   price,
+//   image,
+//   tags
+
+
+// };
+
+//xxxxxxxxxxxxxxxxxxxxxзадача № 9 xxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx//

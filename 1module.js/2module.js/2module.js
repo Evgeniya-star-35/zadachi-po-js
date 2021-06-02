@@ -31,24 +31,24 @@
 //xxxxxxxxxxxxxxxxxxxxxзадача № 3 xxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx//
 
 
-// function checkStorage(available, ordered) {
-//   // Change code below this line
+function checkStorage(available, ordered) {
+  // Change code below this line
  
 
-//   if (ordered === 0) {
+  // if (ordered === 0) {
     
-//    return "Your order is empty!";
+  //  return "Your order is empty!";
     
-//   } if (ordered > available) {
+  // } if (ordered > available) {
     
-//     return "Your order is too large, not enough goods in stock!";
-//   } 
-//     return "The order is accepted, our manager will contact you";
+  //   return "Your order is too large, not enough goods in stock!";
+  // } 
+  //   return "The order is accepted, our manager will contact you";
   
 
   
-//   // Change code above this line
-// }
+  // Change code above this line
+}
 
 
 //xxxxxxxxxxxxxxxxxxxxxзадача № 4 xxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx//

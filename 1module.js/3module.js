@@ -619,3 +619,146 @@
 // Задача. Подсчёт свойств 2.0
 // Задание
 // Выполни рефакторинг функции countProps(object) используя метод Object.keys() и, возможно, цикл for...of.
+
+// function countProps(object) {
+//   // Change code below this line
+//   return Object.keys(object).length;
+//   // Change code above this line
+// }
+
+
+//xxxxxxxxxxxxxxxxxxxxxзадача № 15 xxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx//
+
+// Метод Object.values()
+// Если метод Object.keys(obj) возвращает массив ключей собственных свойств объекта, то метод Object.values(obj) возвращает массив значений его собственных свойств. Если в объекте нет свойств, метод Object.values(obj) вернёт пустой массив.
+
+// const book = {
+//   title: "Последнее королевство",
+//   author: "Бернард Корнуэлл",
+//   rating: 8.38,
+// };
+// const keys = Object.keys(book);
+// console.log(keys); // ["title", "author", "genres", "rating"]
+
+// const values = Object.values(book);
+// console.log(values); // ["Последнее королевство", "Бернард Корнуэлл", 8.38]
+// Массив значений свойств также можно перебрать циклом for...of, например для получения общей суммы числовых значений.
+
+// Задание
+// Запиши в переменную keys массив ключей собственных свойств объекта apartment, а в переменную values массив всех значений его свойств. Используй методы Object.keys() и Object.values().
+
+// const apartment = {
+//   descr: "Spacious apartment in the city center",
+//   rating: 4,
+//   price: 2153,
+// };
+// // Change code below this line
+// const keys = Object.keys(apartment);
+// const values = Object.values(apartment);
+
+//xxxxxxxxxxxxxxxxxxxxxзадача № 16 xxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx//
+// Задача. Расходы на зарплату
+// Задание
+// Напиши функцию countTotalSalary(salaries) которая принимает объект зарплат, где имя свойства это имя сотрудника, а значение свойства это зарплата. Функция должна рассчитать общую сумму зарплат сотрудников и вернуть её. Используй переменную totalSalary для хранения общей суммы зарплаты.
+
+
+  
+//  function countTotalSalary(salaries) {
+//   let totalSalary = 0;
+//   // Change code below this line
+ 
+//   const values = Object.values(salaries);
+// for (const value of values) {
+//  totalSalary += value;
+// }
+
+//   // Change code above this line
+ 
+// console.log(totalSalary);
+//   return totalSalary;
+// }
+// countTotalSalary({})
+// countTotalSalary({ mango: 100, poly: 150, alfred: 80 }) 
+// countTotalSalary({ kiwi: 200, poly: 50, ajax: 150 })
+
+
+//xxxxxxxxxxxxxxxxxxxxxзадача № 17 xxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx//
+
+// Массив объектов
+// В стандартный набор повседневных задач разработчика входит манипуляция массивом однотипных объектов. Это значит что все объекты в массиве гарантированно будут иметь одинаковый набор свойств, но с разными значениями.
+
+// const books = [
+//   {
+//     title: "Последнее королевство",
+//     author: "Бернард Корнуэлл",
+//     rating: 8.38,
+//   },
+//   {
+//     title: "На берегу спокойных вод",
+//     author: "Роберт Шекли",
+//     rating: 8.51,
+//   },
+//   {
+//     title: "Сон смешного человека",
+//     author: "Федор Достоевский",
+//     rating: 7.75,
+//   },
+// ];
+// Для перебора такого массива используется стандартный цикл for...of. Значения свойств каждого объекта можно получить используя синтаксис «через точку», так как в каждом объекте набор свойств и их имена будут одинаковые, отличаются только значения.
+
+// for (const book of books) {
+//   // Объект книги
+//   console.log(book);
+//   // Название
+//   console.log(book.title);
+//   // Автор
+//   console.log(book.author);
+//   // Рейтинг
+//   console.log(book.rating);
+// }
+// Задание
+// Перебери массив объектов colors используя цикл for...of. Добавь в массив hexColors значения свойств hex, а в массив rgbColors значения свойств rgb из всех объектов массива colors.
+
+// const colors = [
+//   { hex: '#f44336', rgb: '244,67,54' },
+//   { hex: '#2196f3', rgb: '33,150,243' },
+//   { hex: '#4caf50', rgb: '76,175,80' },
+//   { hex: '#ffeb3b', rgb: '255,235,59' },
+// ];
+
+// const hexColors = [];
+// const rgbColors = [];
+// // Change code below this line
+// for (let color of colors) {
+//   hexColors.push(color.hex);
+// rgbColors.push(color.rgb);
+// }
+// console.log(hexColors);
+// console.log(rgbColors);
+
+//xxxxxxxxxxxxxxxxxxxxxзадача № 18 xxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx//
+
+// Задача. Поиск объекта по значению свойства
+// Задание
+// Напиши функцию getProductPrice(productName) которая принимает один параметр productName - название продукта. Функция ищет объект продукта с таким именем (свойство name) в массиве products и возвращает его цену (свойство price). Если продукт с таким названием не найден, функция должна возвращать null.
+
+const products = [
+  { name: 'Radar', price: 1300, quantity: 4 },
+  { name: 'Scanner', price: 2700, quantity: 3 },
+  { name: 'Droid', price: 400, quantity: 7 },
+  { name: 'Grip', price: 1200, quantity: 9 },
+];
+
+function getProductPrice(productName) {
+  // Change code below this line
+    for (const product of products) {
+        if (product !== products.name) {
+            console.log(products.price);
+            return products.price;
+        } else if (product === products.name) {
+            return null;
+        }
+    }
+  
+  // Change code above this line
+}

@@ -551,17 +551,71 @@
 // Задание
 // Напиши функцию countProps(object), которая считает и возвращает количество собственных свойств объекта в параметре object. Используй переменную propCount для хранения количества свойств объекта.
 
-function countProps(object) {
-  let propCount = 0;
-  // Change code below this line
-propCount = Object.keys(object).length;
-  // Change code above this line
-  return propCount;
-}
+// function countProps(object) {
+//   let propCount = 0;
+//   // Change code below this line
+// propCount = Object.keys(object).length;
+//   // Change code above this line
+//   return propCount;
+// }
 
 
-console.log(countProps({}));
-console.log(countProps({ name: "Mango", age: 2 }));
-console.log(countProps({ mail: "poly@mail.com", isOnline: true, score: 500 }));
+// console.log(countProps({}));
+// console.log(countProps({ name: "Mango", age: 2 }));
+// console.log(countProps({ mail: "poly@mail.com", isOnline: true, score: 500 }));
 
 
+//xxxxxxxxxxxxxxxxxxxxxзадача № 13 xxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx//
+
+// Метод Object.keys()
+// У встроенного класса Object есть несколько полезных методов для работы с объектами. Первый из них это Object.keys(obj), который принимает объект и возвращает массив ключей его собственных свойств. Если в объекте нет свойств, метод вернёт пустой массив.
+
+// const book = {
+//   title: "Последнее королевство",
+//   author: "Бернард Корнуэлл",
+//   genres: ["историческая проза", "приключения"],
+//   rating: 8.38,
+// };
+// const keys = Object.keys(book);
+// console.log(keys); // ['title', 'author', 'genres', 'rating']
+// Скомбинировав результат Object.keys() и цикл for...of можно удобно перебрать собственные свойства объекта, не прибегая к использованию архаического цикла for...in с проверками принадлежности свойств.
+
+// const book = {
+//   title: "Последнее королевство",
+//   author: "Бернард Корнуэлл",
+//   genres: ["историческая проза", "приключения"],
+//   rating: 8.38,
+// };
+// const keys = Object.keys(book);
+
+// for (const key of keys) {
+//   // Ключ
+//   console.log(key);
+//   // Значение свойства
+//   console.log(book[key]);
+// }
+// Мы перебираем массив ключей объекта и на каждой итерации получаем значение свойства с таким ключом.
+
+// Задание
+// Перебери объект apartment используя метод Object.keys() и цикл for...of. Запиши в переменную keys массив ключей собственных свойств объекта apartment, и добавь в массив values все значения его свойств.
+
+// const apartment = {
+//   descr: "Spacious apartment in the city center",
+//   rating: 4,
+//   price: 2153,
+// };
+// let values = [];
+// // Change code below this line
+// const keys =Object.keys(apartment);
+// for (let value of Object.values(apartment)) {
+//     values.push(value);
+// }
+
+// console.log([keys]);
+// console.log([values]);
+
+//xxxxxxxxxxxxxxxxxxxxxзадача № 14 xxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx//
+
+// Задача. Подсчёт свойств 2.0
+// Задание
+// Выполни рефакторинг функции countProps(object) используя метод Object.keys() и, возможно, цикл for...of.

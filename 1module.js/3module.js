@@ -547,3 +547,9 @@
 
 //xxxxxxxxxxxxxxxxxxxxxзадача № 12 xxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx//
 
+// Задача. Подсчёт свойств
+// Задание
+// Напиши функцию countProps(object), которая считает и возвращает количество собственных свойств объекта в параметре object. Используй переменную propCount для хранения количества свойств объекта.
+
+
+

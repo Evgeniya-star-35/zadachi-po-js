@@ -362,22 +362,26 @@ function checkStorage(available, ordered) {
 // Напиши функцию filterArray(numbers, value), которая принимает массив чисел (параметр numbers) и возвращает новый массив, в котором будут только те элементы массива numbers, которые больше чем значение параметра value (число).
 
 // function filterArray(numbers, value) {
-//    // Change code below this line
+//   // Change code below this line
 
-// let result = [];
+//   let result = [];
 
-// for (let elem of numbers) {
-// 	if (elem > value) {
-// 		result.push(elem);
-// 	}
+  // for (let elem of numbers) {
+  // 	if (elem > value) {
+  // 		result.push(elem);
+  // 	}
+  // }
+
+  // return result;
+  //   // Change code above this line
+  // }
+//   for (let i = 0; i < numbers.length; i += 1) {
+//     if (numbers[i] > value) {
+//       result.push(numbers[i]);
+//     }
+//   }
+//   return result;
 // }
-
-// return result;
-//   // Change code above this line
-// }
-
-
-
 // console.log(filterArray([1, 2, 3, 4, 5], 3));
 // console.log(filterArray([1, 2, 3, 4, 5], 4));
 // console.log(filterArray([1, 2, 3, 4, 5], 5));

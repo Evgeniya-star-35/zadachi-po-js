@@ -820,4 +820,33 @@
 // Задание
 // Напиши функцию calculateTotalPrice(productName) которая принимает один параметр productName - название товара. Функция должна вернуть общую стоимость (цена * количество) товара с таким именем из массива products.
 
+// const products = [
+//   { name: 'Radar', price: 1300, quantity: 4 },
+//   { name: 'Scanner', price: 2700, quantity: 3 },
+//   { name: 'Droid', price: 400, quantity: 7 },
+//   { name: 'Grip', price: 1200, quantity: 9 },
+// ];
+
+// function calculateTotalPrice(productName) {
+//   // Пиши код ниже этой строки
+//   let totalPrice = 0;
+// for (const item of products) {
+//   if(item.name === productName) {
+//     totalPrice = item.price * item.quantity;
+//     console.log(totalPrice);
+
+//   }
+// }
+// return totalPrice;
+
+//   // Пиши код выше этой строки
+// }
+
+// calculateTotalPrice("Blaster") 
+// calculateTotalPrice("Radar") 
+// calculateTotalPrice("Droid")
+// calculateTotalPrice("Grip")
+// calculateTotalPrice("Scanner")
+
+// /xxxxxxxxxxxxxxxxxxxxxзадача № 21 xxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx//
 

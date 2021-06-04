@@ -770,4 +770,54 @@
 // getProductPrice("Droid") 
 // getProductPrice("Engine")
   
-  /xxxxxxxxxxxxxxxxxxxxxзадача № 19 xxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx//
+  // /xxxxxxxxxxxxxxxxxxxxxзадача № 19 xxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx//
+
+//   Задача. Коллекция значений свойства
+// Задание
+// Напиши функцию getAllPropValues(propName) которая принимает один параметр propName - имя (ключ) свойства. Функция должна вернуть массив всех значений свойства с таким именем из каждого объекта в массиве products. Если в объектах нет свойства с таким именем, функция должна вернуть пустой массив.
+
+// const products = [
+//   { name: 'Radar', price: 1300, quantity: 4 },
+//   { name: 'Scanner', price: 2700, quantity: 3 },
+//   { name: 'Droid', price: 400, quantity: 7 },
+//   { name: 'Grip', price: 1200, quantity: 9 },
+// ];
+
+// function getAllPropValues(propName) {
+//   // Change code below this line
+//   const arrayValues = [];
+  
+//   for (const item of products) {
+//     let value = item[propName];
+//     console.log(value);
+//    if (value !== undefined) {
+//         arrayValues.push(value);
+//     }
+    
+//   } 
+//    console.log(arrayValues);
+//      return arrayValues;
+    
+
+   
+
+  
+  
+  
+//   // Change code above this line
+// }
+
+
+// getAllPropValues("name")
+// getAllPropValues("quantity")
+// getAllPropValues("price") 
+// getAllPropValues("category")
+
+
+
+// /xxxxxxxxxxxxxxxxxxxxxзадача № 20 xxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx//
+// Задача. Общая стоимость товара
+// Задание
+// Напиши функцию calculateTotalPrice(productName) которая принимает один параметр productName - название товара. Функция должна вернуть общую стоимость (цена * количество) товара с таким именем из массива products.
+
+

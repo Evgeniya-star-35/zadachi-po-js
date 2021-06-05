@@ -1551,5 +1551,20 @@
 // };
 
 // / /xxxxxxxxxxxxxxxxxxxxxзадача № 38 xxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx//
+// Задача. Добавляем новое зелье
+// Задание
+// Дополни метод addPotion(potionName) так, чтобы он добавлял зелье potionName в конец массива зелий в свойстве potions.
+
+// const atTheOldToad = {
+//   potions: ['Speed potion', 'Dragon breath', 'Stone skin'],
+//   addPotion(potionName) {
+//     // Change code below this line
+//     // Change code above this line
+//     return this.potions.push(potionName);
+//   },
+// };
+
+// / / /xxxxxxxxxxxxxxxxxxxxxзадача № 39 xxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx//
+
 
 

@@ -1296,37 +1296,31 @@
 
 // В параметре data гарантированно будет только свойство text, а остальные два, category и priority, могут отсутствовать. Тогда, в новом объекте задачи, в свойствах category и priority должны быть значения по умолчанию, хранящиеся в одноимённых локальных переменных.
 
-// function makeTask(data) {
-//   const completed = false;
-//   const category = 'General';
-//   const priority = 'Normal';
-//   // Change code below this line
-// const task = { 
-//   completed,
-//   category: category,
-//   priority: priority,
-// };
-//   return task;
-//   // Change code above this line
-// }
-// makeTask({})
-// makeTask({ category: "Homemade", priority: "Low", text: "Take out the trash" })
-// makeTask({ category: "Finance", text: "Take interest" })
-// makeTask({ priority: "Low", text: "Choose shampoo" })
-// makeTask({ text: "Buy bread" })
+function makeTask(data) {
+  const completed = false;
+  const category = 'General';
+  const priority = 'Normal';
+  // Change code below this line
+ const task = {
+  ...
+  {
+  
+  completed,
+  category,
+  priority,
+},
+  ...data
+  };
+  
+  return task;
+  // Change code above this line
+}
 
-// TASK 1
-// Напишите функцию pow(x,n), которая возвращает x в степени n.
-// Иначе говоря, умножает x на себя n раз и возвращает результат.
-// TASK 1
-// Напишите функцию pow(x,n), которая возвращает x в степени n.
-// Иначе говоря, умножает x на себя n раз и возвращает результат.
-
-// const pow = function (x, n) {
-//   return Math.pow(x, n);
-// };
-// console.log(pow(2, 4));
-// ==========
+console.log(makeTask({}));  
+console.log(makeTask({ category: "Homemade", priority: "Low", text: "Take out the trash" }))
+console.log(makeTask({ category: "Finance", text: "Take interest" }))
+console.log(makeTask({ priority: "Low", text: "Choose shampoo" }))
+console.log(makeTask({ text: "Buy bread" }))
 
 
 

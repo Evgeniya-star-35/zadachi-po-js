@@ -1081,10 +1081,13 @@ const forecast = {
   },
 };
 // Change code below this line
+const {
+ today: { high: highToday, low: lowToday, icon: todayIcon = "https://www.flaticon.com/svg/static/icons/svg/861/861059.svg" }, 
+ tomorrow: { high: highTomorrow, low: lowTomorrow, icon: tomorrowIcon = "https://www.flaticon.com/svg/static/icons/svg/2204/2204346.svg" },
+} = forecast;
 
 
-const { today: { highToday, lowToday, todayIcon = "https://www.flaticon.com/svg/static/icons/svg/861/861059.svg" }, tomorrow: { highTomorrow, lowTomorrow, tomorrowIcon = "https://www.flaticon.com/svg/static/icons/svg/2204/2204346.svg" } = forecast;
-
+console.log(forecast);
 
 
 

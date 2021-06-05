@@ -1069,25 +1069,124 @@
 // Задание
 // Мы получили прогноз погоды на два дня, с минимальными и максимальными температурами, а также необязательными иконками. Замени объявления всех переменных одной операцией деструктуризации свойств объекта forecast. Задай значение по умолчанию для иконок, переменных todayIcon и tomorrowIcon - строку "https://www.flaticon.com/svg/static/icons/svg/2204/2204346.svg"
 
-const forecast = {
-  today: {
-    low: 28,
-    high: 32,
-    icon: 'https://www.flaticon.com/svg/static/icons/svg/861/861059.svg',
-  },
-  tomorrow: {
-    low: 27,
-    high: 31,
-  },
-};
+// const forecast = {
+//   today: {
+//     low: 28,
+//     high: 32,
+//     icon: 'https://www.flaticon.com/svg/static/icons/svg/861/861059.svg',
+//   },
+//   tomorrow: {
+//     low: 27,
+//     high: 31,
+//   },
+// };
+// // Change code below this line
+// const {
+//  today: { high: highToday, low: lowToday, icon: todayIcon = "https://www.flaticon.com/svg/static/icons/svg/861/861059.svg" }, 
+//  tomorrow: { high: highTomorrow, low: lowTomorrow, icon: tomorrowIcon = "https://www.flaticon.com/svg/static/icons/svg/2204/2204346.svg" },
+// } = forecast;
+
+
+// console.log(forecast);
+
+// / /xxxxxxxxxxxxxxxxxxxxxзадача № 26 xxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx//
+
+// Паттерн «Объект настроек»
+// Если функция принимает более двух-трёх аргументов, очень просто запутаться в какой последовательности что передавать. В результате получается очень неочевидный код в месте её вызова.
+
+// function doStuffWithBook(title, numberOfPages, downloads, rating, public) {
+//   // Делаем что-то с параметрами
+//   console.log(title);
+//   console.log(numberOfPages);
+//   // И так далее
+// }
+
+// // ❌ Что такое 736? Что такое 10283? Что такое true?
+// doStuffWithBook("Последнее королевство", 736, 10283, 8.38, true);
+// Паттерн «Объект настроек» помогает решить эту проблему, заменяя набор параметров всего одним - объектом с именованными свойствами.
+
+// function doStuffWithBook(book) {
+//   // Делаем что-то со свойствами объекта
+//   console.log(book.title);
+//   console.log(book.numberOfPages);
+//   // И так далее
+// }
+// Тогда во время её вызова передаём один объект с необходимыми свойствами.
+
+// // ✅ Всё понятно
+// doStuffWithBook({
+//   title: "Последнее королевство",
+//   numberOfPages: 736,
+//   downloads: 10283,
+//   rating: 8.38,
+//   public: true,
+// });
+// Ещё один плюс в том, что можно деструктуризировать объект в параметре book.
+
+// // Это можно сделать в теле функции.
+// function doStuffWithBook(book) {
+//   const { title, numberOfPages, downloads, rating, public } = book;
+//   console.log(title);
+//   console.log(numberOfPages);
+//   // И так далее
+// }
+
+// // Или в сигнатуре (подписи), разницы нет.
+// function doStuffWithBook({ title, numberOfPages, downloads, rating, public }) {
+//   console.log(title);
+//   console.log(numberOfPages);
+//   // И так далее
+// }
+// Задание
+// Функция calculateMeanTemperature(forecast) принимает один параметр forecast - объект температур на два дня следующего формата.
+
+// {
+//   today: { low: 10, high: 20 },
+//   tomorrow: { low: 20, high: 30 }
+// }
+// Замени объявления переменных todayLow, todayHigh, tomorrowLow и tomorrowHigh одной операцией деструктуризации свойств объекта forecast.
+
 // Change code below this line
-const {
- today: { high: highToday, low: lowToday, icon: todayIcon = "https://www.flaticon.com/svg/static/icons/svg/861/861059.svg" }, 
- tomorrow: { high: highTomorrow, low: lowTomorrow, icon: tomorrowIcon = "https://www.flaticon.com/svg/static/icons/svg/2204/2204346.svg" },
-} = forecast;
+// function calculateMeanTemperature(forecast) {
+  
+// const {  
+//   today: {
+//   low: todayLow, high: todayHigh },
+//    tomorrow: {   
+//       low: tomorrowLow, high: tomorrowHigh },
+// } = forecast;
+//   // Change code above this line
+//   return (todayLow + todayHigh + tomorrowLow + tomorrowHigh) / 4;
+// }
+// // console.log(forecast);
+// console.log(calculateMeanTemperature({ today: { low: 28, high: 32 }, tomorrow: { low: 25, high: 29 } }));  
+// console.log(calculateMeanTemperature({ today: { low: 37, high: 40 }, tomorrow: { low: 33, high: 38 } }));  
 
+// / /xxxxxxxxxxxxxxxxxxxxxзадача № 27 xxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx//
 
-console.log(forecast);
+// Операция spread при передаче аргументов
+// Синтаксис ... (spread) позволяет распылить коллекцию элементов (массив, строку или объект) в место, где ожидается набор отдельных значений. Конечно есть некоторые ограничения, например нельзя распылить массив в объект и наоборот.
 
+// Можно привести аналогию с ящиком яблок. Поставив ящик на пол не вынимая из него яблоки, получим аналог массива значений. Если высыпать яблоки из ящика на пол, произойдёт распыление - набор отдельных значений.
+
+// Отличие всего одно - в JavaScript распыление не изменяет оригинальную коллекцию, то есть делается копия каждого элемента. После распыления останется и ящик полный яблок, и копия каждого яблока на полу.
+
+// Например, метод Math.max(аргументы) ищет и возвращает самый большой из аргументов (чисел), то есть ожидает не массив значений, а произвольное количество аргументов.
+
+// const temps = [14, -4, 25, 8, 11];
+
+// // В консоли будет массив
+// console.log(temps);
+// // ❌ Так не сработает, потому что передаём целый массив
+// console.log(Math.max(temps)); // NaN
+
+// // В консоли будет набор отдельных чисел
+// console.log(...temps);
+// // ✅ Распылим коллекцию элементов как отдельные аргументы
+// console.log(Math.max(...temps)); // 25
+// То есть запись Math.max(...[14, -4, 25, 8, 11]), после интерпретации превращается в Math.max(14, -4, 25, 8, 11) - синтаксис ... возвращает распакованный массив, то есть распыляет его элементы как отдельные аргументы.
+
+// Задание
+// В переменной scores хранится массив результатов тестирования. Используя распыление и методы Math.max() и Math.min() дополни код так, чтобы в переменной bestScore был самый высокий балл, а в worstScore самый низкий.
 
 

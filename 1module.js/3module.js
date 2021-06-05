@@ -1587,3 +1587,19 @@
 
 // / / /xxxxxxxxxxxxxxxxxxxxxзадача № 40 xxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx//
 
+// Задача. Обновляем зелье
+// Задание
+// Дополни метод updatePotionName(oldName, newName) так, чтобы он обновлял название зелья с oldName на newName, в массиве зелий в свойстве potions.
+
+// const atTheOldToad = {
+//   potions: ['Speed potion', 'Dragon breath', 'Stone skin'],
+//   updatePotionName(oldName, newName) {
+//     // Change code below this line
+//  const indexName = this.potions.indexOf(oldName);
+//    return this.potions.splice(indexName, 1, newName);
+//     // Change code above this line
+//   },
+// };
+
+// / / /xxxxxxxxxxxxxxxxxxxxxзадача № 41 xxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx//
+

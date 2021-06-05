@@ -1566,5 +1566,24 @@
 
 // / / /xxxxxxxxxxxxxxxxxxxxxзадача № 39 xxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx//
 
+// Задача. Удаляем зелье
+// Задание
+// Дополни метод removePotion(potionName) так, чтобы он удалял зелье potionName из массива зелий в свойстве potions.
 
+// const atTheOldToad = {
+//   potions: ["Speed potion", "Dragon breath", "Stone skin"],
+//   removePotion(potionName) {
+//     // Change code below this line
+//     const indexName = this.potions.indexOf(potionName);
+//     this.potions.splice(indexName, 1);
+
+//     return this.potions;
+//     // Change code above this line
+//   },
+// };
+
+// console.log(atTheOldToad.removePotion("Dragon breath"));  
+// console.log(atTheOldToad.removePotion("Speed potion"));  
+
+// / / /xxxxxxxxxxxxxxxxxxxxxзадача № 40 xxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx//
 

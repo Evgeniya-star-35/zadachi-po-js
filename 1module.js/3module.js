@@ -1603,3 +1603,18 @@
 
 // / / /xxxxxxxxxxxxxxxxxxxxxзадача № 41 xxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx//
 
+// Задача. Расширяем инвентарь
+// Задание
+// Заказчица хочет чтобы каждое зелье было представлено не только именем, но и ценой, а в будущем может быть и другими характеристиками. Поэтому теперь в свойстве potions будет храниться массив объектов со следующими свойствами.
+
+// {
+//   name: "Dragon breath",
+//   price: 700
+// }
+// Выполни рефакторинг методов объекта atTheOldToad так, чтобы они работали не с массивом строк, а с массивом объектов.
+
+// getPotions() - метод для получения всех зелий. Возвращает значение свойства potions.
+// addPotion(newPotion) - добавляет зелье newPotion (уже объект) в массив в свойстве potions.
+// removePotion(potionName) - удаляет объект зелья с именем potionName из массива в свойстве potions.
+// updatePotionName(oldName, newName) - обновляет свойство name объекта-зелья с названием oldName на newName в массиве potions.
+

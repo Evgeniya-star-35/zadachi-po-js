@@ -1645,21 +1645,23 @@ const atTheOldToad = {
   // Change code below this line
   getPotions() {
     return this.potions;
+    
   },
   addPotion(potionName) {
-    if (atTheOldToad.potions.includes(potionName)) {
-      return `Potion ${potionName} is already equipped!`;
+    for (let i = 0; i < this.potions.length; i += 1) {
+      if (i === potionName) {
+        return `Potion ${potionName} is already equipped!`;
+      }
     }
-
-    this.potions.push(potionName);
+    return this.potions.push(potionName);
   },
   removePotion(potionName) {
-   
+  
     for (let i = 0; i < this.potions.length; i += 1) {
       const item = this.potions[i];
       console.log(item);
           if (potionName === item) {
-        this.potions.splice(i, 1);
+       return this.potions.splice(potionName, 1);
       }
     }
     
@@ -1670,11 +1672,12 @@ const atTheOldToad = {
   updatePotionName(oldName, newName) {
     for (let i = 0; i < this.potions.length; i += 1) {
       if (this.potions[i] === oldName) {
-        return this.potions.splice(i, 1, newName);
+        console.log(this.potions.splice(oldName, 1, newName));
+        return this.potions.splice(oldName, 1, newName);
       
       }
     }
- `Potion ${oldName} is not in inventory!`;
+ return `Potion ${oldName} is not in inventory!`;
     
   },
   // Change code above this line

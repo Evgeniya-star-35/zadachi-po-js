@@ -1646,29 +1646,34 @@
 //   ],
 //   // Change code below this line
 //   getPotions() {
+  
 //     return this.potions;
     
 //   },
-//   addPotion(potionName) {
-//     for (let i = 0; i < this.potions.length; i += 1) {
-//       // console.log(this.potions[i]);
-//         // console.log(potionName);
-//       if (this.potions[i] === potionName) {
 
-//       return `Potion ${potionName} is already equipped!`;
+//   addPotion(potionName) {
+//     for (const potion of this.potions) {
+      
+//       if (potion.name === potionName) {
+      
+//         console.log( `Potion ${potionName} is already equipped!`); 
 //       }
+//       console.log(potionName);
+//       return this.potions.push(potionName);
 //     }
-//     console.log(this.potions.push(potionName));
-//     return this.potions.push(potionName);
+  
+    
     
 //   },
 //   removePotion(potionName) {
-  
-//     for (let i = 0; i < this.potions.length; i += 1) {
-//       const item = this.potions[i];
-//       console.log(item);
-//           if (potionName === item) {
-//       return this.potions.splice(newPotion, 1);
+//     const { potions } = this;
+//     for (let i = 0; i < potions.length; i += 1) {
+
+//       // console.log(this.potions[i]);
+//        const item = this.potions[i];
+//       if (potionName === item.name) {
+       
+//       return potions.splice(potionName, 1);
 //       }
 //     }
     

@@ -325,5 +325,27 @@
 // Используй this в теле функции для доступа к свойствам объекта-заказа в контексте которого она была вызывана.
 // Дополни код так, чтобы в переменной messages получился массив сообщений о статусе заказов из массива orders с помощью цикла for.               
 
+const orders = [
+  { email: 'solomon@topmail.ua', dish: 'Burger' },
+  { email: 'artemis@coldmail.net', dish: 'Pizza' },
+  { email: 'jacob@mail.com', dish: 'Taco' },
+];
+
+// Пиши код ниже этой строки
+function composeMessage(position) {
+    const messages = [];
+    let message = `Готовим ${dish} для ${email}. Ваш заказ ${position}-й в очереди.`;
+    for (let i = 0; i < this.length; i += 1) {
+    
+        console.log(this[i]);
+        messages.push( )
+    composeMessage.call(number);  
+    }
+
+    
+    return messages;
+
+}
+
 
 

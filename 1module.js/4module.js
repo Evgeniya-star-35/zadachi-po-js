@@ -332,31 +332,8 @@ const orders = [
 ];
 
 // Пиши код ниже этой строки
-function composeMessage(position) {
-    const messages = [];
-  const keys = Object.keys(orders);
-  for (const key of keys) {
-    console.log(key);
-    position = Number(key) + 1;
-    console.log(position);
-  
-    return `Готовим ${this.dish} для ${this.email}. Ваш заказ ${position}-й в очереди.`;
-  }
-      
-    console.log(composeMessage.call(messages));
-  return composeMessage.call();
-}
+// Пиши код ниже этой строки
+function composeMessage(position) {}
 
-// function greetGuest(greeting) {
-//   console.log(`${greeting}, ${this.username}.`);
-// }
-
-// const mango = { username: "Манго" };
-// const poly = { username: "Поли" };
-
-// greetGuest.call(mango, "Добро пожаловать");
-// // Добро пожаловать, Манго.
-
-// greetGuest.call(poly, "С приездом");
-// // С приездом, Поли.
+const messages = [];
 

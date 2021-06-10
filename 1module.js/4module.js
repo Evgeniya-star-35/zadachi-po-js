@@ -335,7 +335,7 @@ const orders = [
 function composeMessage(position) {
     const messages = [];
     let message = `Готовим ${dish} для ${email}. Ваш заказ ${position}-й в очереди.`;
-    for (let i = 0; i < this.length; i += 1) {
+    for (let i = 0; i < orders.length; i += 1) {
     
         console.log(this[i]);
         messages.push( )

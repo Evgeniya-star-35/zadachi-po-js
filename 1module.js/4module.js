@@ -334,18 +334,29 @@ const orders = [
 // Пиши код ниже этой строки
 function composeMessage(position) {
     const messages = [];
-    let message = `Готовим ${dish} для ${email}. Ваш заказ ${position}-й в очереди.`;
-    for (let i = 0; i < orders.length; i += 1) {
-    
-        console.log(this[i]);
-        messages.push( )
-    composeMessage.call(number);  
-    }
-
-    
-    return messages;
-
+  const keys = Object.keys(orders);
+  for (const key of keys) {
+    console.log(key);
+    position = Number(key) + 1;
+    console.log(position);
+  
+    return `Готовим ${this.dish} для ${this.email}. Ваш заказ ${position}-й в очереди.`;
+  }
+      
+    console.log(composeMessage.call(messages));
+  return composeMessage.call();
 }
 
+// function greetGuest(greeting) {
+//   console.log(`${greeting}, ${this.username}.`);
+// }
 
+// const mango = { username: "Манго" };
+// const poly = { username: "Поли" };
+
+// greetGuest.call(mango, "Добро пожаловать");
+// // Добро пожаловать, Манго.
+
+// greetGuest.call(poly, "С приездом");
+// // С приездом, Поли.
 

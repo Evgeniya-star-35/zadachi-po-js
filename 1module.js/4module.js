@@ -334,18 +334,21 @@ const orders = [
 // Пиши код ниже этой строки
 // Пиши код ниже этой строки
 function composeMessage(position) {
- const messages = [];
-  for (const order of orders) {
-    // console.log(order);
-    messages.push(`Готовим ${order.dish} для ${order.email}. Ваш заказ ${position}-й в очереди.`);
-    composeMessage.call(orders, );
+
+  const messages = [];
+//  console.log(messages);
+  for (let i = 0; i < orders.length; i += 1) {
+     
+    // console.log(orders[i].email);
+    // console.log(orders[i].dish);
+    position = i + 1;
+    // console.log(position);
+   
+     return messages.push(`Готовим ${orders[i].dish} для ${orders[i].email}. Ваш заказ ${position}-й в очереди.`); 
     
-  
-  }
-  console.log(`Готовим ${orders.dish} для ${orders.email}. Ваш заказ ${position}-й в очереди.`);
-  return `Готовим ${orders.dish} для ${orders.email}. Ваш заказ ${position}-й в очереди.`
-}
-console.log(composeMessage());
-
-
-
+     composeMessage.call(orders[i], orders[i].dish, orders[i].email);
+    }
+  return messages;
+};
+ 
+  composeMessage();

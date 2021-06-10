@@ -333,7 +333,19 @@ const orders = [
 
 // Пиши код ниже этой строки
 // Пиши код ниже этой строки
-function composeMessage(position) {}
+function composeMessage(position) {
+ const messages = [];
+  for (const order of orders) {
+    // console.log(order);
+    messages.push(`Готовим ${order.dish} для ${order.email}. Ваш заказ ${position}-й в очереди.`);
+    composeMessage.call(orders, );
+    
+  
+  }
+  console.log(`Готовим ${orders.dish} для ${orders.email}. Ваш заказ ${position}-й в очереди.`);
+  return `Готовим ${orders.dish} для ${orders.email}. Ваш заказ ${position}-й в очереди.`
+}
+console.log(composeMessage());
 
-const messages = [];
+
 

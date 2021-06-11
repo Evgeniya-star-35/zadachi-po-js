@@ -331,24 +331,54 @@ const orders = [
   { email: 'jacob@mail.com', dish: 'Taco' },
 ];
 
-// Пиши код ниже этой строки
+
 // Пиши код ниже этой строки
 function composeMessage(position) {
-
+return `Готовим ${this.dish} для ${this.email}. Ваш заказ ${position}-й в очереди.`; 
   const messages = [];
-//  console.log(messages);
+//  
   for (let i = 0; i < orders.length; i += 1) {
      
-    // console.log(orders[i].email);
-    // console.log(orders[i].dish);
-    position = i + 1;
-    // console.log(position);
    
-     return messages.push(`Готовим ${orders[i].dish} для ${orders[i].email}. Ваш заказ ${position}-й в очереди.`); 
-    
-     composeMessage.call(orders[i], orders[i].dish, orders[i].email);
+    // console.log(position);
+    // composeMessage.call(orders[i], i + 1);
+    messages.push(composeMessage.call(orders[i], i + 1))
+     
+    console.log(messages);
+     
     }
-  return messages;
+  
 };
- 
-  composeMessage();
+composeMessage();
+  //  ххххххххххххх   ответ хххххххххххххххххххх
+// function composeMessage(position) {
+//  return `Готовим ${this.dish} для ${this.email}. Ваш заказ ${position}-й в очереди.`
+// }
+// const messages = [];
+// for (let i = 0; i < orders.length; i += 1) {
+// 	messages.push(composeMessage.call(orders[i], i + 1))
+// }
+//   composeMessage();
+
+//                                 Задача 8 
+
+// Метод apply
+// Метод apply это аналог метода call за исключением того, что синтаксис передачи аргументов требует не перечисление, а массив, даже если аргумент всего один.
+
+// foo.call(obj, arg1, arg2, ...)
+
+// foo.apply(obj, [arg1, arg2, ...])
+// Метод apply вызовет функцию foo так, что в this будет ссылка на объект obj, а также передаст элементы массива как отдельные аргументы arg1, arg2 и т. д. На практике, в основном используется метод call.
+
+// function greetGuest(greeting) {
+//   console.log(`${greeting}, ${this.username}.`);
+// }
+
+// const mango = { username: "Манго" };
+// const poly = { username: "Поли" };
+
+// greetGuest.apply(mango, ["Добро пожаловать"]); // Добро пожаловать, Манго.
+// greetGuest.apply(poly, ["С приездом"]); // С приездом, Поли.
+// Задание
+// Выполни рефакторинг кода так, чтобы функция composeMessage(position) вызывалась методом apply.
+

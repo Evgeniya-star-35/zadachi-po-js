@@ -325,38 +325,38 @@
 // Используй this в теле функции для доступа к свойствам объекта-заказа в контексте которого она была вызывана.
 // Дополни код так, чтобы в переменной messages получился массив сообщений о статусе заказов из массива orders с помощью цикла for.               
 
-const orders = [
-  { email: 'solomon@topmail.ua', dish: 'Burger' },
-  { email: 'artemis@coldmail.net', dish: 'Pizza' },
-  { email: 'jacob@mail.com', dish: 'Taco' },
-];
+// const orders = [
+//         { email: 'solomon@topmail.ua', dish: 'Burger' },
+//         { email: 'artemis@coldmail.net', dish: 'Pizza' },
+//         { email: 'jacob@mail.com', dish: 'Taco' },
+//       ];
+
+      // Пиши код ниже этой строки
 
 
-// Пиши код ниже этой строки
-function composeMessage(position) {
-return `Готовим ${this.dish} для ${this.email}. Ваш заказ ${position}-й в очереди.`; 
-  const messages = [];
-//  
-  for (let i = 0; i < orders.length; i += 1) {
-     
-   
-    // console.log(position);
-    // composeMessage.call(orders[i], i + 1);
-    messages.push(composeMessage.call(orders[i], i + 1))
-     
-    console.log(messages);
-     
-    }
-  
-};
-composeMessage();
+      // function composeMessage(position) {
+      //   return `Готовим ${this.dish} для ${this.email}.Ваш заказ ${position} -й в очереди.`;
+      // };
+
+      // const messages = [];
+
+      // for (let i = 0; i<orders.length; i+=1){
+
+      //   let result = composeMessage.call(orders[i],i+1);
+      //   messages.push(result)
+
+
+      //   }
+
+
+      //   console.log(messages);
   //  ххххххххххххх   ответ хххххххххххххххххххх
 // function composeMessage(position) {
 //  return `Готовим ${this.dish} для ${this.email}. Ваш заказ ${position}-й в очереди.`
 // }
 // const messages = [];
 // for (let i = 0; i < orders.length; i += 1) {
-// 	messages.push(composeMessage.call(orders[i], i + 1))
+// 	messages.push(composeMessage.call(orders[i], i + 1));
 // }
 //   composeMessage();
 
@@ -381,4 +381,74 @@ composeMessage();
 // greetGuest.apply(poly, ["С приездом"]); // С приездом, Поли.
 // Задание
 // Выполни рефакторинг кода так, чтобы функция composeMessage(position) вызывалась методом apply.
+
+// хххххххх  Решение хххххххххххххх
+
+// const orders = [
+//   { email: "solomon@topmail.ua", dish: "Burger" },
+//   { email: "artemis@coldmail.net", dish: "Pizza" },
+//   { email: "jacob@mail.com", dish: "Taco" },
+// ];
+
+// // Пиши код ниже этой строки
+// function composeMessage(position) {
+//   return `Готовим ${this.dish} для ${this.email}. Ваш заказ ${position}-й в очереди.`;
+// };
+
+// const messages = [];
+// for (let i = 0; i < orders.length; i++) {
+  
+//   messages.push(composeMessage.apply(orders[i], [i + 1]));
+// }
+
+
+
+// хххххххххххххх    Задача 9 хххххх
+
+
+// Метод bind
+// Методы call и apply вызывают функцию «на месте», то есть сразу.Но в случае колбэк - функций, когда необходимо не сразу вызвать функцию, а передать ссылку на неё,
+//   причём с привязанным контекстом, используется метод bind.
+
+// foo.bind(obj, arg1, arg2, ...)
+// Метод bind создаёт и возвращает копию функции foo с привязанным контекстом obj и аргументами arg1, arg2 и т.д.Получается копия функции которую можно передать
+// куда угодно и вызвать когда угодно.
+
+// function greet(clientName) {
+//   return `${clientName}, добро пожаловать в «${this.service}».`;
+// }
+
+// const steam = { service: 'Steam' };
+// const steamGreeter = greet.bind(steam);
+// steamGreeter('Манго'); // "Манго, добро пожаловать в «Steam»."
+
+// const gmail = { service: 'Gmail' };
+// const gmailGreeter = greet.bind(gmail);
+// gmailGreeter('Поли'); // "Поли, добро пожаловать в «Gmail»."
+// Задание
+// Функция composeMessage(customerName) создаёт приветственные сообщения для ресторанов.Дополни код так, чтобы в переменных pizzaPalaceComposer и
+// burgerShackComposer были её копии с привязанным контекстом к соответствующим объектам.
+
+//                                     Решение 
+
+
+// const pizzaPalace = {
+//   company: 'Pizza Palace',
+// };
+
+// const burgerShack = {
+//   company: 'Burger Shack',
+// };
+
+// function composeMessage(customerName) {
+//   return `${customerName}, всегда рады вас видеть в «${this.company}».`;
+// }
+// // Пиши код ниже этой строки
+
+// const pizzaPalaceComposer = composeMessage.bind(pizzaPalace);
+// const pizzaPalaceMessage = pizzaPalaceComposer('Манго');
+
+// const burgerShackComposer = composeMessage.bind(burgerShack);
+// const burgerShackMessage = burgerShackComposer('Поли');
+
 

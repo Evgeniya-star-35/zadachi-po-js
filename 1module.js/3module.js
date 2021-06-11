@@ -1340,6 +1340,18 @@
 // console.log(makeTask({ text: "Buy bread" }))
 
 
+// xxxxxxxxxxxxxxxxxxxx  вариант решения хххххххххххх
+
+// addPotion(newPotion) {
+//       for (const potion of this.potions){
+//         if (Object.values(potion).includes(newPotion.name) &&
+//             Object.values(potion).includes(newPotion.price)){
+//           return `Potion ${newPotion.name} is already equipped!`;
+//         }
+//       } 
+//       this.potions.push(newPotion);
+//     } (edited) 
+
 // / /xxxxxxxxxxxxxxxxxxxxxзадача № 31 xxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx//
 
 // Операция rest для сбора всех аргументов функции

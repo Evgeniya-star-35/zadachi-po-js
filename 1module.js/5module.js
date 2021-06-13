@@ -210,15 +210,15 @@
 
 //                                                    ответ
 
-function Car({ brand, model, price }) {
-  this.brand = brand;
-  this.model = model;
-  this.price = price;
-}
+// function Car({ brand, model, price }) {
+//   this.brand = brand;
+//   this.model = model;
+//   this.price = price;
+// }
 
-Car.prototype.getPrice = function() {
-return this.price;
-};
+// Car.prototype.getPrice = function() {
+// return this.price;
+// };
 
 // Car.prototype.changePrice = function(newPrice) {
 //   return this.price = newPrice;
@@ -244,26 +244,87 @@ return this.price;
 //                                                     ответ
 
 
-function Storage (items) {
-  this.items = items;
-} 
-  Storage.prototype.getItems = function() {
-    return this.items; 
-  };
-    Storage.prototype.addItem = function(newItem) {
-       return this.items.push(newItem);
-};
+// function Storage (items) {
+//   this.items = items;
+// } 
+//   Storage.prototype.getItems = function() {
+//     return this.items; 
+//   };
+//     Storage.prototype.addItem = function(newItem) {
+//        return this.items.push(newItem);
+// };
 
-Storage.prototype.removeItem = function (item) {
-  const itemIndex = this.items.indexOf(item);
-    return this.items.splice(itemIndex, 1);
-  };
+// Storage.prototype.removeItem = function (item) {
+//   const itemIndex = this.items.indexOf(item);
+//     return this.items.splice(itemIndex, 1);
+//   };
 
 
-// Пиши код выше этой строки
-const storage = new Storage(['Нанитоиды', 'Пролонгер', 'Антигравитатор']);
-console.log(storage.getItems()); // ["Нанитоиды", "Пролонгер", "Антигравитатор"]
-storage.addItem('Дроид');
-console.log(storage.getItems()); // ["Нанитоиды", "Пролонгер", "Антигравитатор", "Дроид"]
-storage.removeItem('Пролонгер');
-console.log(storage.getItems()); // ["Нанитоиды", "Антигравитатор", "Дроид"]
+// // Пиши код выше этой строки
+// const storage = new Storage(['Нанитоиды', 'Пролонгер', 'Антигравитатор']);
+// console.log(storage.getItems()); // ["Нанитоиды", "Пролонгер", "Антигравитатор"]
+// storage.addItem('Дроид');
+// console.log(storage.getItems()); // ["Нанитоиды", "Пролонгер", "Антигравитатор", "Дроид"]
+// storage.removeItem('Пролонгер');
+// console.log(storage.getItems()); // ["Нанитоиды", "Антигравитатор", "Дроид"]
+
+
+//                                         Задача № 7
+
+// Конструктор строк
+// Задание
+// С помощью Function Declaration напиши функцию - конструктор StringBuilder, которая принимает один параметр baseValue - произвольную строку, которая записывается на
+// создаваемый объект в свойство value.
+
+// Добавь методы на прототип:
+
+// getValue() - возвращает текущее значение свойства value.
+// padEnd(str) - получает парметр str (строку) и добавляет её в конец значения свойства value объекта, который вызывает этот метод.
+// padStart(str) - получает парметр str (строку) и добавляет её в начало значения свойства value объекта, который вызывает этот метод.
+// padBoth(str) - получает парметр str (строку) и добавляет её в начало и в конец значения свойства value объекта, который вызывает этот метод.
+// Под комментарием мы добавили инициализацию экземпляра и вызовы методов в той последовательности, в которой твой код будут проверять тесты. Пожалуйста ничего там не меняй.
+
+
+//                                                        ответ
+
+
+// function StringBuilder(baseValue) {
+//   this.value = baseValue;
+//   // console.log(value);
+
+  
+// };
+// StringBuilder.prototype.getValue = function() {
+//   return this.value;
+// };
+
+ 
+// StringBuilder.prototype.padStart = function(str) {
+//   return this.value = this.value.padStart (2, str);
+// };
+// StringBuilder.prototype.padEnd = function(str) {
+//   return this.value = this.value.padEnd (3, str);
+  
+  
+// };
+// StringBuilder.prototype.padBoth = function(str) {
+//   return this.value = str + this.value + str;
+ 
+// };
+ 
+// // Пиши код выше этой строки
+// const builder = new StringBuilder('.');
+// console.log(builder.getValue()); // '.'
+// builder.padStart('^');
+// console.log(builder.getValue()); // '^.'
+// builder.padEnd('^');
+// console.log(builder.getValue()); // '^.^'
+// builder.padBoth('=');
+// console.log(builder.getValue()); // '=^.^='
+
+
+//                                          Задача № 8
+
+
+
+

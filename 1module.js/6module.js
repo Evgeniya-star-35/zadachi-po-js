@@ -35,14 +35,45 @@
 
 //                                                              ответ 
 
-function calculateTotalPrice(orderedItems) {
-    let totalPrice = 0;
-    // Пиши код ниже этой строки, index, orderedItems
-    orderedItems.forEach(function (item) {
-        totalPrice += item
-    })
-      // Пиши код выше этой строки
-    return totalPrice;
-}
+// function calculateTotalPrice(orderedItems) {
+//     let totalPrice = 0;
+//     // Пиши код ниже этой строки, index, orderedItems
+//     orderedItems.forEach(function (item) {
+//         totalPrice += item
+//     })
+//       // Пиши код выше этой строки
+//     return totalPrice;
+// }
 
-console.log(calculateTotalPrice([12, 85, 37, 4]));
+// console.log(calculateTotalPrice([12, 85, 37, 4]));
+
+
+//                                                          Задача №  2
+
+// Задача. Фильтрация массива чисел
+// Задание
+// Функция filterArray(numbers, value) принимает массив чисел numbers и возвращает новый массив, в котором будут только те элементы оригинального массива,
+//     которые больше чем значение параметра value.
+
+// Выполни рефакторинг функции так, чтобы вместо цикла for она использовала метод forEach.
+
+
+//                                                     ответ 
+
+// function filterArray(numbers, value) {
+//     const filteredNumbers = [];
+//     // Пиши код ниже этой строки
+  
+//   numbers.forEach(function (number) {
+//         if (number > value) {
+//             filteredNumbers.push(number);
+      
+//         }
+//     })
+  
+//     // Пиши код выше этой строки
+//     return filteredNumbers;
+//   }
+
+//                                                                  Задача №  3
+

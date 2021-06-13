@@ -233,5 +233,47 @@
 
 //                                                          Задача №  7
 
+// Задача. Фильтрация массива чисел 2.0
+// Задание
+// Замени объявление функции filterArray() и коллбек для метода forEach() на стрелочные функции.
+
+//                                                           ответ 
+
+// const filterArray = (numbers, value) => {
+//     const filteredNumbers = [];
+  
+//     numbers.forEach((number) =>{
+//       if (number > value) {
+//         filteredNumbers.push(number);
+//       }
+//     });
+  
+//     // Пиши код выше этой строки
+//     return filteredNumbers;
+//   }
+
+//                                                          Задача №  8
+
+// Задача. Общие элементы 2.0
+// Задание
+// Замени объявление функции getCommonElements() и коллбек для метода forEach() на стрелочные функции.
+
+
+//                                                           ответ 
+
+// const getCommonElements = (firstArray, secondArray) => {
+//     const commonElements = [];
+  
+//     firstArray.forEach((element) =>{
+//       if (secondArray.includes(element)) {
+//         commonElements.push(element);
+//       }
+//     });
+  
+//     // Пиши код выше этой строки
+//     return commonElements;
+//   }
+
+//                                                          Задача №  9
 
 //                                                           ответ 

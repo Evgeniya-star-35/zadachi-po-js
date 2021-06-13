@@ -210,15 +210,15 @@
 
 //                                                    ответ
 
-// function Car({ brand, model, price }) {
-//   this.brand = brand;
-//   this.model = model;
-//   this.price = price;
-// }
+function Car({ brand, model, price }) {
+  this.brand = brand;
+  this.model = model;
+  this.price = price;
+}
 
-// Car.prototype.getPrice = function() {
-// return this.price;
-// };
+Car.prototype.getPrice = function() {
+return this.price;
+};
 
 // Car.prototype.changePrice = function(newPrice) {
 //   return this.price = newPrice;
@@ -244,19 +244,22 @@
 //                                                     ответ
 
 
-const Storage = function (items) {
-  
-}
-Storage.prototype.getItems = function () {
-    console.log(items);
-  return this.items;
+function Storage (items) {
+  this.items = items;
+} 
+  Storage.prototype.getItems = function() {
+    return this.items; 
+  };
+    Storage.prototype.addItem = function(newItem) {
+       return this.items.push(newItem);
 };
-Storage.prototype.addItem = function(newItem) {
-  return items.push(newItem);
-};
-Storage.prototype.removeItem = function(item){
-  return items.splise(item);
-};
+
+Storage.prototype.removeItem = function (item) {
+  const itemIndex = this.items.indexOf(item);
+    return this.items.splice(itemIndex, 1);
+  };
+
+
 // Пиши код выше этой строки
 const storage = new Storage(['Нанитоиды', 'Пролонгер', 'Антигравитатор']);
 console.log(storage.getItems()); // ["Нанитоиды", "Пролонгер", "Антигравитатор"]

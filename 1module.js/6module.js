@@ -764,25 +764,65 @@
 
  //                                                           ответ 
 
-const books = [
-    {
-      title: 'Последнее королевство',
-      author: 'Бернард Корнуэлл',
-      genres: ['приключения', 'историческое']
-    },
-    {
-      title: 'На берегу спокойных вод',
-      author: 'Роберт Шекли',
-      genres: ['фантастика', 'мистика']
-    },
-    {
-      title: 'Красна как кровь',
-      author: 'Ли Танит',
-      genres: ['ужасы', 'мистика', 'приключения']
-    }
-  ];
-  // Пиши код ниже этой строки
-  const allGenres = books.flatMap((book) => book.genres);
-const uniqueGenres = allGenres.filter((genre, index, array) => allGenres.indexOf(genre) === index);
-console.log(allGenres); 
-console.log(uniqueGenres);
+// const books = [
+//     {
+//       title: 'Последнее королевство',
+//       author: 'Бернард Корнуэлл',
+//       genres: ['приключения', 'историческое']
+//     },
+//     {
+//       title: 'На берегу спокойных вод',
+//       author: 'Роберт Шекли',
+//       genres: ['фантастика', 'мистика']
+//     },
+//     {
+//       title: 'Красна как кровь',
+//       author: 'Ли Танит',
+//       genres: ['ужасы', 'мистика', 'приключения']
+//     }
+//   ];
+//   // Пиши код ниже этой строки
+//   const allGenres = books.flatMap((book) => book.genres);
+// const uniqueGenres = allGenres.filter((genre, index, array) => allGenres.indexOf(genre) === index);
+// console.log(allGenres); 
+// console.log(uniqueGenres);
+
+
+//                                                          Задача №  17
+
+// Метод filter() и массив объектов
+// При работе с массивом объектов выполняется фильтрация по значению какого-то свойства. В результате получается новый массив отфильтрованных объектов.
+
+// Например, есть массив студентов с баллами за тест. Необходимо отфильтровать лучших (балл выше 80), худших (балл ниже 50) и средних студентов (балл от 50 до 80).
+
+// const LOW_SCORE = 50;
+// const HIGH_SCORE = 80;
+// const students = [
+//   { name: 'Манго', score: 83 },
+//   { name: 'Поли', score: 59 },
+//   { name: 'Аякс', score: 37 },
+//   { name: 'Киви', score: 94 },
+//   { name: 'Хьюстон', score: 64 },
+// ];
+
+// const best = students.filter((student) => student.score >= HIGH_SCORE);
+// console.log(best); // Массив объектов с именами Манго и Киви
+
+// const worst = students.filter((student) => student.score < LOW_SCORE);
+// console.log(worst); // Массив с одним объектом Аякс
+
+// // В коллбек-функции удобно деструктуризировать свойства объекта
+// const average = students.filter(
+//   ({ score }) => score >= LOW_SCORE && score < HIGH_SCORE
+// );
+// console.log(average); // Массив объектов с именами Поли и Хьюстон
+// Задание
+// Используя метод filter() дополни код так, чтобы:
+
+// В переменной topRatedBooks получился массив книг рейтинг которых (свойство rating) больше либо равно значению переменной MIN_RATING.
+// В переменной booksByAuthor получился массив книг написанных автором с именем (свойство author) которое совпадает со значением в переменной AUTHOR.
+
+
+ //                                                           ответ 
+
+ 

@@ -322,37 +322,25 @@
 //                                                           ответ 
 
 
-const changeEven = (numbers, value) => {
+function changeEven(numbers, value) {
     // Пиши код ниже этой строки
     let newNumbers = [];
     numbers.forEach(number => {
-       
-        // console.log(number);
-        newNumbers.push(number + value);
-        console.log(newNumbers);
-        
+          
+        if (number % 2 === 0) {
+            
+            newNumbers.push(number + value);
+           
+        }
+        if (number % 2 !== 0) {
+            newNumbers.push(number);
+        }
     });
     return newNumbers;
+    
     
     // Пиши код выше этой строки
 };
 console.log(changeEven([1, 2, 3, 4, 5], 10));
-  
+console.log(changeEven([2, 8, 3, 7, 4, 6], 10)); 
 
-// const pureMultiply = (array, value) => {
-//   const newArray = [];
-
-//   array.forEach(element => {
-//     newArray.push(element * value);
-//   });
-
-//   return newArray;
-// };
-
-// const numbers = [1, 2, 3, 4, 5];
-// const doubledNumbers = pureMultiply(numbers, 2);
-
-// // Не произошло мутации исходных данных
-// console.log(numbers); // [1, 2, 3, 4, 5]
-// // Функция вернула новый массив с изменёнными данными
-// console.log(doubledNumbers); // [2, 4, 6, 8, 10]

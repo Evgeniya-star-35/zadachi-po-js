@@ -1949,7 +1949,7 @@
 //                                                          Задача №  33
 // Задача. Общее количество друзей
 // Этот массив объектов мы будем передавать в параметр users при вызове функции из задания.
-
+// const users=
 // [
 //   {
 //     name: 'Moore Hensley',
@@ -2018,10 +2018,6 @@
 // Задание
 // Дополни функцию getTotalFriendCount(users) так, чтобы она считала и возвращала общее количество друзей (свойство friends) всех пользователей из массива users.
 
-// / / / /                                                       ответ
-
 const getTotalFriendCount = users => {
-    return users.reduce((acc, user) =>
-        acc + user.friends, []);
-   
+  return users.reduce((acc, user) => acc + user.friends.length, 0)
 };

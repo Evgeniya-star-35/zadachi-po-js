@@ -223,8 +223,8 @@
 // Car.prototype.changePrice = function(newPrice) {
 //   return this.price = newPrice;
 // };
-
-
+// console.log(Car.prototype.changePrice(35000));
+// new Car({ brand: 'Audi', model: 'Q3', price: 36000 })
 //                                                 Задача № 6
 
 

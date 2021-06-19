@@ -1812,7 +1812,7 @@
 //   mango: 1270,
 //   poly: 468,
 //   ajax: 710,
-//   kiwi: 244
+//   kiwi: 244,
 // };
 // const playtimes = Object.values(players); // [1270, 468, 710, 244]
 // // Пиши код ниже этой строки
@@ -2785,15 +2785,17 @@
 //     gender: 'female'
 //   }
 // ]
-// // Задание
-// // Дополни функцию getTotalBalanceByGender(users, gender) так, чтобы она возвращала общий баланс пользователей(свойство balance), пол которых(свойство gender) совпадает
-// // со значением параметра gender.
+// Задание
+// Дополни функцию getTotalBalanceByGender(users, gender) так, чтобы она возвращала общий баланс пользователей(свойство balance), пол которых(свойство gender) совпадает
+// со значением параметра gender.
 
 
-// // / / / /                                                       ответ
+// / / / /                                                       ответ
 
 // const getTotalBalanceByGender = (users, gender) => {
 //   return  [...users].filter(user => user.gender === gender).reduce((acc, user) => acc + user.balance, 0);
   
 // };
 // console.log([...users].filter(user => user.gender === gender).reduce((acc, user) => acc + user.balance, 0));
+
+

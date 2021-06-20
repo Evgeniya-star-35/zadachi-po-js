@@ -1300,57 +1300,57 @@
 
 // / /xxxxxxxxxxxxxxxxxxxxxзадача № 30 xxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx//
 
-Задача. Карточки задач
-Задание
-Напиши функцию makeTask(data) которая принимает один параметр data - объект со следующими свойствами.
+// Задача. Карточки задач
+// Задание
+// Напиши функцию makeTask(data) которая принимает один параметр data - объект со следующими свойствами.
 
-text - текст задачи.
-category - категория задачи.
-priority - приоритет задачи.
-Функция должна составить и вернуть новый объект задачи, не изменяя напрямую параметр data.В новом объекте должно быть свойство completed, значение которого хранится
-в одноимённой локальной переменной.
+// text - текст задачи.
+// category - категория задачи.
+// priority - приоритет задачи.
+// Функция должна составить и вернуть новый объект задачи, не изменяя напрямую параметр data.В новом объекте должно быть свойство completed, значение которого хранится
+// в одноимённой локальной переменной.
 
-В параметре data гарантированно будет только свойство text, а остальные два, category и priority, могут отсутствовать.Тогда, в новом объекте задачи,
-  в свойствах category и priority должны быть значения по умолчанию, хранящиеся в одноимённых локальных переменных.
+// В параметре data гарантированно будет только свойство text, а остальные два, category и priority, могут отсутствовать.Тогда, в новом объекте задачи,
+//   в свойствах category и priority должны быть значения по умолчанию, хранящиеся в одноимённых локальных переменных.
 
-function makeTask(data) {
-  const completed = false;
-  const category = 'General';
-  const priority = 'Normal';
-  // Change code below this line
- const task = {
-  ...
-  {
+// function makeTask(data) {
+//   const completed = false;
+//   const category = 'General';
+//   const priority = 'Normal';
+//   // Change code below this line
+//  const task = {
+//   ...
+//   {
   
-  completed,
-  category,
-  priority,
-},
-  ...data
-  };
+//   completed,
+//   category,
+//   priority,
+// },
+//   ...data
+//   };
   
-  return task;
-  // Change code above this line
-}
+//   return task;
+//   // Change code above this line
+// }
 
-console.log(makeTask({}));  
-console.log(makeTask({ category: "Homemade", priority: "Low", text: "Take out the trash" }))
-console.log(makeTask({ category: "Finance", text: "Take interest" }))
-console.log(makeTask({ priority: "Low", text: "Choose shampoo" }))
-console.log(makeTask({ text: "Buy bread" }))
+// console.log(makeTask({}));  
+// console.log(makeTask({ category: "Homemade", priority: "Low", text: "Take out the trash" }))
+// console.log(makeTask({ category: "Finance", text: "Take interest" }))
+// console.log(makeTask({ priority: "Low", text: "Choose shampoo" }))
+// console.log(makeTask({ text: "Buy bread" }))
 
 
-xxxxxxxxxxxxxxxxxxxx  вариант решения хххххххххххх
+// xxxxxxxxxxxxxxxxxxxx  вариант решения хххххххххххх
 
-addPotion(newPotion) {
-      for (const potion of this.potions){
-        if (Object.values(potion).includes(newPotion.name) &&
-            Object.values(potion).includes(newPotion.price)){
-          return `Potion ${newPotion.name} is already equipped!`;
-        }
-      } 
-      this.potions.push(newPotion);
-    } (edited) 
+// addPotion(newPotion) {
+//       for (const potion of this.potions){
+//         if (Object.values(potion).includes(newPotion.name) &&
+//             Object.values(potion).includes(newPotion.price)){
+//           return `Potion ${newPotion.name} is already equipped!`;
+//         }
+//       } 
+//       this.potions.push(newPotion);
+//     } (edited) 
 
 // / /xxxxxxxxxxxxxxxxxxxxxзадача № 31 xxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx//
 

@@ -128,7 +128,7 @@
 
 
 // function Car(brand, model, price) {
- 
+
 //     this.brand = brand;
 //     this.model = model; 
 //     this.price = price;
@@ -292,26 +292,26 @@
 //   this.value = baseValue;
 //   // console.log(value);
 
-  
+
 // };
 // StringBuilder.prototype.getValue = function() {
 //   return this.value;
 // };
 
- 
+
 // StringBuilder.prototype.padStart = function(str) {
 //   return this.value = this.value.padStart (2, str);
 // };
 // StringBuilder.prototype.padEnd = function(str) {
 //   return this.value = this.value.padEnd (3, str);
-  
-  
+
+
 // };
 // StringBuilder.prototype.padBoth = function(str) {
 //   return this.value = str + this.value + str;
- 
+
 // };
- 
+
 // // Пиши код выше этой строки
 // const builder = new StringBuilder('.');
 // console.log(builder.getValue()); // '.'
@@ -512,7 +512,7 @@
 
 
 // class Car {
-  
+
 //   #brand;
 //   constructor({ brand, model, price }) {
 //     this.#brand = brand;
@@ -522,11 +522,11 @@
 //   getBrand() {
 //     return this.#brand;
 //   };
-  
+
 //   changeBrand(newBrand) {
 //     this.#brand = newBrand;
 //   };
-   
+
 // }
 
 // console.log(new Car({ brand: 'Audi', model: 'Q3', price: 36000 }));
@@ -545,9 +545,9 @@
   //                                                   ответ
 
 //   class Storage {
-  
+
 //   #items;
-  
+
 //   constructor (items) {
 //   this.#items = items;
 // }
@@ -588,7 +588,7 @@
 
 // class StringBuilder {
 //   #value;
-  
+
 //   constructor (baseValue) {
 //   this.#value = baseValue;
 // }

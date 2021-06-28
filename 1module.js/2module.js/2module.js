@@ -31,7 +31,7 @@
 //xxxxxxxxxxxxxxxxxxxxxзадача № 3 xxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx//
 
 
-function checkStorage(available, ordered) {
+// function checkStorage(available, ordered) {
   // Change code below this line
  
 

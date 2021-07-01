@@ -32,8 +32,7 @@
 
 // Выполни рефакторинг функции так, чтобы вместо цикла for она использовала метод forEach.
 
-
-//                                                              ответ 
+//                                                              ответ
 
 // function calculateTotalPrice(orderedItems) {
 //     let totalPrice = 0;
@@ -47,7 +46,6 @@
 
 // console.log(calculateTotalPrice([12, 85, 37, 4]));
 
-
 //                                                          Задача №  2
 
 // Задача. Фильтрация массива чисел
@@ -57,26 +55,24 @@
 
 // Выполни рефакторинг функции так, чтобы вместо цикла for она использовала метод forEach.
 
-
-//                                                     ответ 
+//                                                     ответ
 
 // function filterArray(numbers, value) {
 //     const filteredNumbers = [];
 //     // Пиши код ниже этой строки
-  
+
 //   numbers.forEach(function (number) {
 //         if (number > value) {
 //             filteredNumbers.push(number);
-      
+
 //         }
 //     })
-  
+
 //     // Пиши код выше этой строки
 //     return filteredNumbers;
 //   }
 
 //                                                                  Задача №  3
-
 
 // Задача. Общие элементы
 // Задание
@@ -85,25 +81,23 @@
 
 // Выполни рефакторинг функции так, чтобы вместо цикла for она использовала метод forEach.
 
-//                                                                    ответ 
+//                                                                    ответ
 
 // function getCommonElements(firstArray, secondArray) {
 //     const commonElements = [];
 //     // Пиши код ниже этой строки
-  
+
 //     firstArray.forEach(function(item) {
 //       if (secondArray.includes(item)) {
 //         commonElements.push(item);
 //       }
 //     })
-  
+
 //     return commonElements;
 //     // Пиши код выше этой строки
 //   }
 
-
 //                                                                  Задача №  4
-
 
 // Стрелочные функции.
 // Стрелочные функции имеют сокращённый, более лаконичный синтаксис, что уменьшает объем кода, особенно когда функция маленькая или если она используется как коллбек.
@@ -139,17 +133,14 @@
 // Задание
 // Выполни рефакторинг функции calculateTotalPrice() так, чтобы она была объявлена как стрелочная.
 
-
-//                                                             ответ 
+//                                                             ответ
 
 // const calculateTotalPrice = (quantity, pricePerItem) => {
 //   // Пиши код выше этой строки
 //   return quantity * pricePerItem;
 // }
 
-
 //                                                         Задача №  5
-
 
 // Неявный возврат
 // В стрелочной функции после символа => идёт её тело. Здесь может быть два варианта: с фигурными скобками и без них.
@@ -178,14 +169,12 @@
 // Задание
 // Выполни рефакторинг функции calculateTotalPrice() так, чтобы она использовала неявный возврат.
 
-
-//                                                           ответ 
+//                                                           ответ
 
 // Пиши код ниже этой строки
 // const calculateTotalPrice = (quantity, pricePerItem) => quantity * pricePerItem;
- 
-// Пиши код выше этой строки
 
+// Пиши код выше этой строки
 
 //                                                          Задача №  6
 
@@ -217,8 +206,7 @@
 // Выполни рефакторинг функции calculateTotalPrice(orderedItems) заменив её объявление на стрелочную функцию.Замени коллбек - функцию передаваемую в метод forEach()
 // на стрелочную функцию.
 
-
-//                                                           ответ 
+//                                                           ответ
 
 // const calculateTotalPrice = (orderedItems) => {
 //   let totalPrice = 0;
@@ -230,24 +218,23 @@
 //   return totalPrice;
 // }
 
-
 //                                                          Задача №  7
 
 // Задача. Фильтрация массива чисел 2.0
 // Задание
 // Замени объявление функции filterArray() и коллбек для метода forEach() на стрелочные функции.
 
-//                                                           ответ 
+//                                                           ответ
 
 // const filterArray = (numbers, value) => {
 //     const filteredNumbers = [];
-  
+
 //     numbers.forEach((number) =>{
 //       if (number > value) {
 //         filteredNumbers.push(number);
 //       }
 //     });
-  
+
 //     // Пиши код выше этой строки
 //     return filteredNumbers;
 //   }
@@ -258,18 +245,17 @@
 // Задание
 // Замени объявление функции getCommonElements() и коллбек для метода forEach() на стрелочные функции.
 
-
-//                                                           ответ 
+//                                                           ответ
 
 // const getCommonElements = (firstArray, secondArray) => {
 //     const commonElements = [];
-  
+
 //     firstArray.forEach((element) =>{
 //       if (secondArray.includes(element)) {
 //         commonElements.push(element);
 //       }
 //     });
-  
+
 //     // Пиши код выше этой строки
 //     return commonElements;
 //   }
@@ -318,34 +304,28 @@
 
 // Выполни рефакторинг функции так, чтобы она стала чистой - не изменяла массив чисел numbers, а создавала, наполняла и возвращала новый массив с обновлёнными значениями.
 
-
-//                                                           ответ 
-
+//                                                           ответ
 
 // function changeEven(numbers, value) {
 //     // Пиши код ниже этой строки
 //     let newNumbers = [];
 //     numbers.forEach(number => {
-          
+
 //         if (number % 2 === 0) {
-            
+
 //             newNumbers.push(number + value);
-           
+
 //         }
 //         if (number % 2 !== 0) {
 //             newNumbers.push(number);
 //         }
 //     });
 //     return newNumbers;
-    
-    
+
 //     // Пиши код выше этой строки
 // };
 // console.log(changeEven([1, 2, 3, 4, 5], 10));
-// console.log(changeEven([2, 8, 3, 7, 4, 6], 10)); 
-
-
-
+// console.log(changeEven([2, 8, 3, 7, 4, 6], 10));
 
 //                                                          Задача №  10
 
@@ -380,14 +360,12 @@
 // Задание
 // Дополни код так, чтобы в переменной planetsLengths получился массив длин названий планет. Обязательно используй метод map().
 
-
-//                                                           ответ 
+//                                                           ответ
 
 // const planets = ['Земля', 'Марс', 'Венера', 'Юпитер'];
 // // Пиши код ниже этой строки
 // const planetsLengths = planets.map((planet) => planet.length);
 // console.log(planetsLengths);
-
 
 //                                                          Задача №  11
 
@@ -410,8 +388,7 @@
 // Задание
 // Используя метод map() сделай так, чтобы в переменной titles получился массив названий книг (свойство title) из всех объектов массива books.
 
-
-//                                                           ответ 
+//                                                           ответ
 
 // const books = [
 //     { title: 'Последнее королевство', author: 'Бернард Корнуэлл', rating: 8.38 },
@@ -421,9 +398,8 @@
 //     { title: 'Враг Божий', author: 'Бернард Корнуэлл', rating: 8.67 }
 //   ];
 //   // Пиши код ниже этой строки
-  
-//   const titles = books.map(book => book.title);
 
+//   const titles = books.map(book => book.title);
 
 //                                                          Задача №  12
 
@@ -453,7 +429,7 @@
 // Задание
 // Используя метод flatMap() сделай так, чтобы в переменной genres получился массив всех жанров книг (свойство genres) из массива книг books.
 
-//                                                           ответ 
+//                                                           ответ
 
 // const books = [
 //     {
@@ -473,9 +449,8 @@
 //     }
 //   ];
 //   // Пиши код ниже этой строки
-  
-//   const genres = books.flatMap((book) => book.genres);
 
+//   const genres = books.flatMap((book) => book.genres);
 
 //                                                          Задача №  13
 
@@ -564,19 +539,17 @@
 // Задание
 // Дополни функцию getUserNames(users) так, чтобы она возвращала массив имён пользователей (свойство name) из массива объектов в параметре users.
 
-
-//                                                           ответ 
+//                                                           ответ
 
 // Пиши код ниже этой строки
 // const getUserNames = users => {
-    
+
 // const names = users.map(user => user.name);
 //   return names;
 //   };
-  // Пиши код выше этой строки
-  
+// Пиши код выше этой строки
 
-  //                                                          Задача №  14
+//                                                          Задача №  14
 
 //   Задача. Почты пользователей
 // Этот массив объектов мы будем передавать в параметр users при вызове функции из задания.
@@ -663,18 +636,16 @@
 // Задание
 // Дополни функцию getUserEmails(users) так, чтобы она возвращала массив почтовых адресов пользователей (свойство email) из массива объектов в параметре users.
 
-  //                                                           ответ 
+//                                                           ответ
 
-  // Пиши код ниже этой строки
+// Пиши код ниже этой строки
 // const getUserEmails = users => {
-//    const emails = users.map(user => user.email); 
+//    const emails = users.map(user => user.email);
 // return emails;
 //   };
-  // Пиши код выше этой строки
+// Пиши код выше этой строки
 
-
-
-  //                                                          Задача №  15
+//                                                          Задача №  15
 
 //   Методы filter и find
 // Метод filter(callback) используется для единственной операции - фильтрации массива, то есть когда необходимо выбрать более одного элемента из коллекции по какому-то критерию.
@@ -707,8 +678,7 @@
 // Задание
 // Дополни код так, чтобы в переменной evenNumbers получился массив чётных чисел из массива numbers, а в переменной oddNumbers массив нечётных. Обязательно используй метод filter().
 
-
- //                                                           ответ 
+//                                                           ответ
 
 // const numbers = [17, 24, 82, 61, 36, 18, 47, 52, 73];
 // // Пиши код ниже этой строки
@@ -719,7 +689,7 @@
 // console.log(evenNumbers);
 // console.log(oddNumbers);
 
- //                                                          Задача №  16
+//                                                          Задача №  16
 
 //  Фильтрация уникальных элементов
 // Используя метод filter() можно выполнить фильтрацию массива так, что в нём останутся только уникальные элементы. Этот приём работает только с массивом примитивных значений - не объектов.
@@ -762,7 +732,7 @@
 // Дополни код так, чтобы в переменной allGenres был массив всех жанров книг(свойство genres) из массива books, а в переменной uniqueGenres массив уникальных жанров -
 //     без повторений.
 
- //                                                           ответ 
+//                                                           ответ
 
 // const books = [
 //     {
@@ -784,9 +754,8 @@
 //   // Пиши код ниже этой строки
 //   const allGenres = books.flatMap((book) => book.genres);
 // const uniqueGenres = allGenres.filter((genre, index, array) => allGenres.indexOf(genre) === index);
-// console.log(allGenres); 
+// console.log(allGenres);
 // console.log(uniqueGenres);
-
 
 //                                                          Задача №  17
 
@@ -822,8 +791,7 @@
 // В переменной topRatedBooks получился массив книг рейтинг которых (свойство rating) больше либо равно значению переменной MIN_RATING.
 // В переменной booksByAuthor получился массив книг написанных автором с именем (свойство author) которое совпадает со значением в переменной AUTHOR.
 
-
- //                                                           ответ 
+//                                                           ответ
 
 //  const books = [
 //   { title: 'Последнее королевство', author: 'Бернард Корнуэлл', rating: 8.38 },
@@ -842,7 +810,6 @@
 
 // console.log(topRatedBooks);
 // console.log(booksByAuthor);
-
 
 //                                                          Задача №  18
 
@@ -917,12 +884,12 @@
 // Задание
 // Дополни функцию getUsersWithEyeColor(users, color) так, чтобы она возвращала массив пользователей у которых цвет глаз (свойство eyeColor) совпадает со значением параметра color.
 
-//                                                           ответ 
+//                                                           ответ
 
 // const getUsersWithEyeColor = (users, color) => {
 //     const userEyes = users.filter((user) => user.eyeColor === color);
 //     return userEyes;
-    
+
 // };
 
 //                                                          Задача №  19
@@ -1005,14 +972,12 @@
 // Задание
 // Дополни функцию getUsersWithAge(users, minAge, maxAge) так, чтобы она возвращала массив пользователей, возраст которых (свойство age) попадает в промежуток от minAge до maxAge.
 
-
-
-//                                                           ответ 
+//                                                           ответ
 
 // const getUsersWithAge = (users, minAge, maxAge) => {
- 
+
 // const ageUser = users.filter((user) => user.age < maxAge && user.age > minAge);
-//     return ageUser;                  
+//     return ageUser;
 // };
 
 //                                                          Задача №  20
@@ -1095,7 +1060,7 @@
 // Дополни функцию getUsersWithFriend(users, friendName) так, чтобы она возвращала массив пользователей у которых есть друг с именем в параметре friendName.
 // Массив друзей пользователя хранится в свойстве friends.
 
-//                                                           ответ 
+//                                                           ответ
 
 // const getUsersWithFriend = (users, friendName) => {
 //  const isFriendWithName = users.filter((user) => user.friends.includes(friendName));
@@ -1183,14 +1148,13 @@
 // Дополни функцию getFriends(users) так, чтобы она возвращала массив друзей всех пользователей(свойство friends).У нескольких пользователей могут быть одинаковые друзья,
 //     сделай так чтобы возвращаемый массив не содержал повторений.
 
-//                                                           ответ 
+//                                                           ответ
 
 // const getFriends = (users) => {
 //  const allFriends = users.flatMap((user) => user.friends);
 // const uniqueFriends = allFriends.filter((friend, index, array) => allFriends.indexOf(friend) === index);
 //   return uniqueFriends;
 // };
-
 
 //                                                          Задача №  22
 
@@ -1272,10 +1236,10 @@
 // Задание
 // Дополни функцию getActiveUsers(users) так, чтобы она возвращала массив активных пользователей, значение свойства isActive которых true.
 
-//                                                           ответ 
+//                                                           ответ
 
 // const getActiveUsers = (users) => {
-//   const usersIsActive = users.filter((user) => user.isActive === true); 
+//   const usersIsActive = users.filter((user) => user.isActive === true);
 //   return usersIsActive;
 // };
 
@@ -1358,11 +1322,10 @@
 // Задание
 // Дополни функцию getInactiveUsers(users) так, чтобы она возвращала массив неактивных пользователей, значение свойства isActive которых false.
 
-
-// //                                                           ответ 
+// //                                                           ответ
 
 // const getInactiveUsers = (users) => {
-//   const usersIsNoActive = users.filter((user) => user.isActive === false); 
+//   const usersIsNoActive = users.filter((user) => user.isActive === false);
 //   return usersIsNoActive;
 // };
 
@@ -1399,7 +1362,7 @@
 // В переменной bookWithTitle получился объект книги название которой (свойство title) совпадает со значением переменной BOOK_TITLE.
 // В переменной bookByAuthor получился объект книги автор который (свойство author) совпадает со значением переменной AUTHOR.
 
-// //                                                           ответ 
+// //                                                           ответ
 
 // const books = [
 //   { title: 'Последнее королевство', author: 'Бернард Корнуэлл', rating: 8.38 },
@@ -1413,7 +1376,6 @@
 
 // const bookWithTitle = books.find((book) => book.title === BOOK_TITLE);
 // const bookByAuthor = books.find((book) => book.author === AUTHOR);
-
 
 //                                                          Задача №  25
 
@@ -1488,14 +1450,12 @@
 // Задание
 // Дополни функцию getUserWithEmail(users, email) так, чтобы она возвращала объект пользователя, почта которого (свойство email) совпадает со значением параметра email.
 
-
 // / / /                                                       ответ
 
 // const getUserWithEmail = (users, email) => {
 //  const userEmail = users.find((user) => user.email ===  email);
 //   return userEmail;
 // };
-
 
 //                                                          Задача №  26
 
@@ -1542,7 +1502,6 @@
 
 // const eachElementInThirdIsEven = thirdArray.every((element) => element % 2 === 0);
 // const eachElementInThirdIsOdd = thirdArray.every((element) => element % 2 !== 0);
-
 
 //                                                          Задача №  27
 
@@ -1617,13 +1576,12 @@
 // Задание
 // Дополни функцию isEveryUserActive(users) так, чтобы она проверяла все ли пользователи сейчас активны (свойство isActive) и возвращала true или false.
 
-
 // / / /                                                       ответ
 
 // const isEveryUserActive = (users) => {
 //  const isUsersActive = users.every((user) => user.isActive === true);
-//     return isUsersActive;  
-  
+//     return isUsersActive;
+
 // };
 
 //                                                          Задача №  28
@@ -1675,8 +1633,6 @@
 
 // const anyElementInThirdIsEven = thirdArray.some(value => value % 2 ===0);
 // const anyElementInThirdIsOdd = thirdArray.some(value => value % 2 !== 0);
-
-
 
 //                                                          Задача №  29
 // Задача. Есть ли активные пользователи
@@ -1750,14 +1706,12 @@
 // Задание
 // Дополни функцию isAnyUserActive(users) так, чтобы она проверяла наличие активных пользователей (свойство isActive) и возвращала true или false.
 
-
 // / / / /                                                       ответ
 
 // const isAnyUserActive = users => {
-//  const userIsActive = users.some(user => user.isActive === true);  
+//  const userIsActive = users.some(user => user.isActive === true);
 //   return userIsActive;
 // };
-
 
 //                                                          Задача №  30
 
@@ -1805,7 +1759,6 @@
 // Игровому сервису необходим функционал подсчёта среднего времени проведённого в играх.Дополни код так, чтобы в переменной totalPlayTime получилось общее игровое время
 // из массива playtimes.
 
-
 // / / / /                                                       ответ
 
 // const players = {
@@ -1823,7 +1776,6 @@
 
 // // Пиши код выше этой строки
 // const averagePlayTime = totalPlayTime / playtimes.length;
-
 
 //                                                          Задача №  31
 
@@ -1862,7 +1814,6 @@
 //   const average =  player.playtime / player.gamesPlayed;
 //   return total + average;
 // }, 0);
-
 
 //                                                          Задача №  32
 
@@ -1939,11 +1890,10 @@
 
 // / / / /                                                       ответ
 
-
 // const calculateTotalBalance = users => {
 
 //     return users.reduce((acc, user) => acc + user.balance, 0)
-    
+
 // };
 
 //                                                          Задача №  33
@@ -2060,7 +2010,6 @@
 // Дополни код так, чтобы в переменной ascendingReleaseDates получилась отсортированная по возрастанию копия массива releaseDates, а в переменной alphabeticalAuthors
 // копия массива имён авторов authors отсортированная в по алфавиту.
 
-
 // / / / /                                                       ответ
 
 // const releaseDates = [2016, 1967, 2008, 1984, 1973, 2012, 1997];
@@ -2075,9 +2024,6 @@
 // const ascendingReleaseDates = [...releaseDates].sort();
 
 // const alphabeticalAuthors = [...authors].sort();
-
-
-
 
 // /                                                          Задача №  35
 
@@ -2118,7 +2064,6 @@
 
 // const descendingReleaseDates = [...releaseDates].sort((a, b) => b - a);
 
-
 // /                                                          Задача №  36
 // Свой порядок сортировки строк
 // Для сортировки строк в алфавитном порядке, по возрастанию или убыванию, используется метод строк localeCompare().
@@ -2147,7 +2092,6 @@
 // authorsInAlphabetOrder получилась отсортированная по алфавиту копия
 // массива authors, а в переменной authorsInReversedOrder копия отсортированная в обратном алфавитном порядке.
 
-
 // / / / /                                                       ответ
 // const authors = [
 //     'Ли Танит',
@@ -2157,9 +2101,9 @@
 //     'Говард Лавкрафт'
 //   ];
 //   // Пиши код ниже этой строки
-  
+
 //   const authorsInAlphabetOrder = [...authors].sort((a, b) => a.localeCompare(b));
-  
+
 //   const authorsInReversedOrder = [...authors].sort((a, b) => b.localeCompare(a));
 
 // /                                                          Задача №  37
@@ -2194,9 +2138,7 @@
 // В переменной sortedByAscendingRating получился массив книг отсортированный по возрастанию рейтинга.
 // В переменной sortedByDescentingRating получился массив книг отсортированный по убыванию рейтинга.
 
-
 // / / / /                                                       ответ
-
 
 // const books = [
 //   { title: 'Последнее королевство', author: 'Бернард Корнуэлл', rating: 8.38 },
@@ -2214,7 +2156,7 @@
 // const sortedByAscendingRating = [...books].sort(
 //   (firstBook, secondBook) => firstBook.rating - secondBook.rating
 // );
-  
+
 // const sortedByDescentingRating = [...books].sort(
 //   (firstBook, secondBook) => secondBook.rating - firstBook.rating
 // );
@@ -2292,7 +2234,6 @@
 // Задание
 // Дополни функцию sortByAscendingBalance(users) так, чтобы она возвращала массив пользователей отсортированный по возрастанию их баланса (свойство balance).
 
-
 // / / / /                                                       ответ
 
 // Пиши код ниже этой строки
@@ -2301,9 +2242,7 @@
 // };
 // Пиши код выше этой строки
 
-
 // /                                                          Задача №  39
-
 
 // Задача. Сортировка по количеству друзей
 // Этот массив объектов мы будем передавать в параметр users при вызове функции из задания.
@@ -2376,17 +2315,13 @@
 // Задание
 // Дополни функцию sortByDescendingFriendCount(users) так, чтобы она возвращала массив пользователей отсортированный по убыванию количества их друзей (свойство friends).
 
-
 // / / / /                                                       ответ
-
 
 //   const sortByDescendingFriendCount = users => {
 //     return [...users].sort((a, b) => b.friends.length - a.friends.length)
 //   };
 
 // console.log([...users].sort((a, b) => b.friends.length - a.friends.length));
-
-
 
 // /                                                          Задача №  40
 // Задача. Сортировка по имени
@@ -2460,7 +2395,6 @@
 // Задание
 // Дополни функцию sortByName(users) так, чтобы она возвращала массив пользователей отсортированный по их имени (свойство name) в алфавитном порядке.
 
-
 // / / / /                                                       ответ
 
 // const sortByName = users => {
@@ -2517,8 +2451,6 @@
 // Задание
 // Дополни код так, чтобы в переменной names получился массив имён авторов в алфавитном порядке, рейтинг книг которых больше значения переменной MIN_BOOK_RATING.
 
-
-
 // / / / /                                                       ответ
 
 // const books = [
@@ -2534,10 +2466,7 @@
 // const names = [...books].filter((book) => book.rating > MIN_BOOK_RATING).map((book) => book.author).sort((a, b) => a.localeCompare(b));
 // console.log(names);
 
-
-
-//                                  для себя по шагам 
-
+//                                  для себя по шагам
 
 // const boo = [...books].filter((book) => book.rating > MIN_BOOK_RATING);
 // console.log(boo);
@@ -2619,15 +2548,12 @@
 // Задание
 // Дополни функцию getNamesSortedByFriendCount(users) так, чтобы она возвращала массив имён пользователей отсортированный по возрастанию количества их друзей (свойство friends).
 
-
 // / / / /                                                       ответ
 
 // const getNamesSortedByFriendCount = users => {
 //   return  [...users].sort((a, b) => a.friends.length - b.friends.length).map((user) => user.name);
 // };
 // console.log([...users].sort((a, b) => a.friends.length - b.friends.length).map((user) => user.name));
-
-
 
 // /                                                          Задача №  43
 
@@ -2702,8 +2628,6 @@
 // Задание
 // Дополни функцию getSortedFriends(users) так, чтобы она возвращала массив уникальных имён друзей (свойство friends) отсортированный по алфавиту .
 
-
-
 // / / / /                                                       ответ
 
 // Пиши код ниже этой строки
@@ -2715,7 +2639,6 @@
 // console.log([...users].flatMap((user) => user.friends).filter((item, index, array) => array.indexOf(item) === index ).sort((a, b) => a.localeCompare(b)));
 
 // /                                                          Задача №  44
-
 
 // Задача. Общий баланс
 // Этот массив объектов мы будем передавать в параметр users при вызове функции из задания.
@@ -2789,13 +2712,10 @@
 // Дополни функцию getTotalBalanceByGender(users, gender) так, чтобы она возвращала общий баланс пользователей(свойство balance), пол которых(свойство gender) совпадает
 // со значением параметра gender.
 
-
 // / / / /                                                       ответ
 
 // const getTotalBalanceByGender = (users, gender) => {
 //   return  [...users].filter(user => user.gender === gender).reduce((acc, user) => acc + user.balance, 0);
-  
+
 // };
 // console.log([...users].filter(user => user.gender === gender).reduce((acc, user) => acc + user.balance, 0));
-
-
